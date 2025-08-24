@@ -208,6 +208,8 @@ const HeroSection = () => {
           Revolutionizing elephant tranquilization through cutting-edge drone technology
         </p>
         
+
+        
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8 md:mt-12 animate-fade-in">
           <button 
             className="btn-primary w-full sm:w-auto px-8 py-3 bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40"

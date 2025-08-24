@@ -63,6 +63,9 @@ const Footer = () => {
                 className="h-16 w-auto"
               />
             </div>
+            <p className="text-white/80 text-sm leading-relaxed max-w-xs">
+              Revolutionizing Surveillance control with precision drone technology
+            </p>
 
           </motion.div>
 

@@ -121,6 +121,7 @@ const PortfolioHome = () => {
             >
               AI-First Payload Systems | <span className="text-psyc-orange">Computer Vision & Automation</span> for Next-Gen Drones
             </motion.p>
+
             
             {/* Call-to-Action Buttons */}
             <motion.div 
@@ -182,6 +183,9 @@ const PortfolioHome = () => {
                     className="h-16 w-auto"
                   />
                 </div>
+                <p className="text-white/80 text-sm leading-relaxed max-w-xs">
+                  Revolutionizing Surveillance control with precision drone technology
+                </p>
               </motion.div>
 
               {/* Social links */}
