@@ -25,18 +25,18 @@ const Navbar = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    if (location.pathname !== '/') {
-      // If not on home page, navigate to home first
-      window.location.href = `/#${sectionId}`;
-      return;
+    // Check if we're on the main website (either / or /psyc-defence)
+    if (location.pathname === '/' || location.pathname === '/psyc-defence') {
+      // On main website, scroll to section
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+      setMobileMenuOpen(false);
+    } else {
+      // If not on main website, navigate to main website first
+      window.location.href = `/psyc-defence#${sectionId}`;
     }
-    
-    // On home page, scroll to section
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-    setMobileMenuOpen(false);
   };
 
   return (

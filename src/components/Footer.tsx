@@ -153,7 +153,7 @@ const Footer = () => {
                 <div>
                   <p className="text-white/90 font-medium">Incubated at:</p>
                   <p className="leading-relaxed text-xs">
-                    AICDSU Foundation<br />
+                    AIC-DSU Foundation<br />
                     VJPR+WGG, Service Rd<br />
                     Kudlu Main Rd, Srinivasa Nagar<br />
                     Hal Layout, Singasandra<br />

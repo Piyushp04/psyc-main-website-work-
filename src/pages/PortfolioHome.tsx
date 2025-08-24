@@ -48,27 +48,48 @@ const PortfolioHome = () => {
             
             {/* Navigation Menu */}
             <nav className="hidden md:flex space-x-8">
-              <Link to="/" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+              <button 
+                onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}
+                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+              >
                 Home
-              </Link>
-              <Link to="/about" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+              </button>
+              <Link 
+                to="/psyc-defence#hero"
+                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+              >
                 About
               </Link>
-              <Link to="/capabilities" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
-                Capabilities
+              <Link 
+                to="/psyc-defence#problem-solution"
+                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+              >
+                Solutions
               </Link>
-              <Link to="/rd" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
-                R&D
+              <Link 
+                to="/psyc-defence#features"
+                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+              >
+                Features
               </Link>
-              <Link to="/contact" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
-                Contact
+              <Link 
+                to="/psyc-defence#demo"
+                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+              >
+                Drone Demo
+              </Link>
+              <Link 
+                to="/psyc-defence#testimonials"
+                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+              >
+                Reactions
               </Link>
             </nav>
           </div>
         </header>
 
         {/* Hero Section - Main PSYC Homepage */}
-        <section className="py-20 text-center">
+        <section id="hero" className="py-20 text-center">
           <div className="container mx-auto px-4 md:px-8">
             <motion.h1 
               initial={{ opacity: 0, y: -20 }}
@@ -84,7 +105,7 @@ const PortfolioHome = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-6xl font-bold mb-8 text-white"
             >
-              Aerospace and Defence Industry
+              Aerospace and Defence Industries
             </motion.h2>
             <motion.div 
               initial={{ opacity: 0, scale: 0 }}
@@ -119,6 +140,12 @@ const PortfolioHome = () => {
             </motion.div>
           </div>
         </section>
+
+
+
+
+
+
 
         {/* Footer */}
         <footer className="bg-gradient-to-b from-gray-800 to-black text-white pt-16 pb-8 relative overflow-hidden">
@@ -328,7 +355,7 @@ const PortfolioHome = () => {
                     <div>
                       <p className="text-white/90 font-medium">Incubated at:</p>
                       <p className="leading-relaxed text-xs">
-                        AICDSU Foundation<br />
+                        AIC-DSU Foundation<br />
                         VJPR+WGG, Service Rd<br />
                         Kudlu Main Rd, Srinivasa Nagar<br />
                         Hal Layout, Singasandra<br />

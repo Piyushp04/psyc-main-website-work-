@@ -2,8 +2,6 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThreeDBackground from "@/components/ThreeDBackground";
-import VideoCard from "@/components/VideoCard";
-import { problemVideos, africaVideos, solutionsVideos } from "@/data/videoData";
 
 const TigerPage = () => {
   return (
@@ -25,26 +23,29 @@ const TigerPage = () => {
           </div>
         </section>
 
-        {/* Tiger Videos - India */}
+        {/* The Problem: India */}
         <section className="py-16">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Tiger Videos - India
+              The Problem: India
             </h2>
             
             {/* Karnataka */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Karnataka</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.india.karnataka.map((video, index) => (
-                  <VideoCard
-                    key={`karnataka-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Karnataka"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Karnataka - Case 1</h4>
+                  <p className="text-white/60">Karnataka</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Karnataka - Case 2</h4>
+                  <p className="text-white/60">Karnataka</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Karnataka - Case 3</h4>
+                  <p className="text-white/60">Karnataka</p>
+                </div>
               </div>
             </div>
 
@@ -52,15 +53,18 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Kerala</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.india.kerala.map((video, index) => (
-                  <VideoCard
-                    key={`kerala-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Kerala"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Kerala - Case 1</h4>
+                  <p className="text-white/60">Kerala</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Kerala - Case 2</h4>
+                  <p className="text-white/60">Kerala</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Kerala - Case 3</h4>
+                  <p className="text-white/60">Kerala</p>
+                </div>
               </div>
             </div>
 
@@ -68,15 +72,14 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Assam</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.india.assam.map((video, index) => (
-                  <VideoCard
-                    key={`assam-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Assam"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Assam - Case 1</h4>
+                  <p className="text-white/60">Assam</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Assam - Case 2</h4>
+                  <p className="text-white/60">Assam</p>
+                </div>
               </div>
             </div>
 
@@ -84,15 +87,18 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Maharashtra</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.india.maharashtra.map((video, index) => (
-                  <VideoCard
-                    key={`maharashtra-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Maharashtra"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Maharashtra - Case 1</h4>
+                  <p className="text-white/60">Maharashtra</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Maharashtra - Case 2</h4>
+                  <p className="text-white/60">Maharashtra</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Maharashtra - Case 3</h4>
+                  <p className="text-white/60">Maharashtra</p>
+                </div>
               </div>
             </div>
 
@@ -100,15 +106,14 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Madhya Pradesh</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.india.madhyaPradesh.map((video, index) => (
-                  <VideoCard
-                    key={`madhyaPradesh-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Madhya Pradesh"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Madhya Pradesh - Case 1</h4>
+                  <p className="text-white/60">Madhya Pradesh</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Madhya Pradesh - Case 2</h4>
+                  <p className="text-white/60">Madhya Pradesh</p>
+                </div>
               </div>
             </div>
 
@@ -116,40 +121,47 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Odisha</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.india.odisha.map((video, index) => (
-                  <VideoCard
-                    key={`odisha-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Odisha"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Odisha - Case 1</h4>
+                  <p className="text-white/60">Odisha</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Odisha - Case 2</h4>
+                  <p className="text-white/60">Odisha</p>
+                  <p className="text-red-400 text-sm mt-2">Video Not Available</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Odisha - Case 3</h4>
+                  <p className="text-white/60">Odisha</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Tiger Videos - International */}
+        {/* The Problem: International */}
         <section className="py-16 bg-black/20">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Tiger Videos - International
+              The Problem: International
             </h2>
             
             {/* China */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">China</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.china.map((video, index) => (
-                  <VideoCard
-                    key={`china-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="China"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in China</h4>
+                  <p className="text-white/60">China</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in China - Case 2</h4>
+                  <p className="text-white/60">China</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in China - Case 3</h4>
+                  <p className="text-white/60">China</p>
+                </div>
               </div>
             </div>
 
@@ -157,15 +169,18 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Sri Lanka</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.sriLanka.map((video, index) => (
-                  <VideoCard
-                    key={`sriLanka-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Sri Lanka"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Sri Lanka - Case 1</h4>
+                  <p className="text-white/60">Sri Lanka</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Sri Lanka - Case 2</h4>
+                  <p className="text-white/60">Sri Lanka</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Sri Lanka - Case 3</h4>
+                  <p className="text-white/60">Sri Lanka</p>
+                </div>
               </div>
             </div>
 
@@ -173,91 +188,58 @@ const TigerPage = () => {
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Thailand</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {problemVideos.thailand.map((video, index) => (
-                  <VideoCard
-                    key={`thailand-${index}`}
-                    videoId={video.url.replace('https://youtu.be/', '')}
-                    title={video.title}
-                    region="Thailand"
-                    isAvailable={video.available !== false}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Bangladesh */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Bangladesh</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/30 rounded-lg p-6 border border-white/20">
-                  <h3 className="text-xl font-bold mb-4 text-psyc-orange">
-                    Bengal Tigers in Sundarbans
-                  </h3>
-                  <div className="aspect-video bg-black/50 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-white/60">Video Placeholder</span>
-                  </div>
-                  <p className="text-white/80 text-sm">
-                    Bengal tigers in Sundarbans
-                  </p>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Thailand - Case 1</h4>
+                  <p className="text-white/60">Thailand</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Thailand - Case 2</h4>
+                  <p className="text-white/60">Thailand</p>
+                </div>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Thailand - Case 3</h4>
+                  <p className="text-white/60">Thailand</p>
                 </div>
               </div>
             </div>
 
-            {/* Nepal */}
+            {/* Africa */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Nepal</h3>
+              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Africa</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/30 rounded-lg p-6 border border-white/20">
-                  <h3 className="text-xl font-bold mb-4 text-psyc-orange">
-                    Tiger Conservation in Nepal
-                  </h3>
-                  <div className="aspect-video bg-black/50 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-white/60">Video Placeholder</span>
-                  </div>
-                  <p className="text-white/80 text-sm">
-                    Tiger conservation in Nepal
-                  </p>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Africa</h4>
+                  <p className="text-white/60">Africa</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Russia */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Russia</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/30 rounded-lg p-6 border border-white/20">
-                  <h3 className="text-xl font-bold mb-4 text-psyc-orange">
-                    Siberian Tiger Protection
-                  </h3>
-                  <div className="aspect-video bg-black/50 rounded-lg mb-4 flex items-center justify-center">
-                    <span className="text-white/60">Video Placeholder</span>
-                  </div>
-                  <p className="text-white/80 text-sm">
-                    Siberian tiger protection
-                  </p>
+                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                  <h4 className="text-lg font-semibold mb-2">Human-Tiger Conflicts in Zimbabwe</h4>
+                  <p className="text-white/60">Africa</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Tiger Solutions Section */}
+        {/* Current Solutions & Innovations */}
         <section className="py-16">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Tiger Conflict Solutions
+              Current Solutions & Innovations
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {solutionsVideos.map((video, index) => (
-                <VideoCard
-                  key={`solution-${index}`}
-                  videoId={video.url.replace('https://youtu.be/', '')}
-                  title={video.title}
-                  region="Solutions"
-                  isAvailable={video.available !== false}
-                />
-              ))}
+              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                <h4 className="text-lg font-semibold mb-2">Tiger-Wildlife Conflicts Management in India</h4>
+                <p className="text-white/60">Solutions</p>
+              </div>
+              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                <h4 className="text-lg font-semibold mb-2">Wildlife Conflict Solutions - India</h4>
+                <p className="text-white/60">Solutions</p>
+              </div>
+              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
+                <h4 className="text-lg font-semibold mb-2">Tiger-Wildlife Conflicts in Africa - Solutions</h4>
+                <p className="text-white/60">Solutions</p>
+              </div>
             </div>
           </div>
         </section>
