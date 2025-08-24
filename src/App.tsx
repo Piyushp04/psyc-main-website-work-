@@ -12,6 +12,8 @@ import ElephantPage from "./pages/ElephantPage";
 import LionPage from "./pages/LionPage";
 import GaurPage from "./pages/GaurPage";
 import RhinoPage from "./pages/RhinoPage";
+import SlothBearPage from "./pages/SlothBearPage";
+import LeopardPage from "./pages/LeopardPage";
 
 import NotFound from "./pages/NotFound";
 
@@ -32,8 +34,8 @@ const App = () => (
           <Route path="/psyc-defence/lion" element={<LionPage />} />
           <Route path="/psyc-defence/gaur" element={<GaurPage />} />
           <Route path="/psyc-defence/rhino" element={<RhinoPage />} />
-          <Route path="/psyc-defence/sloth-bear" element={<TigerPage />} />
-          <Route path="/psyc-defence/leopard" element={<TigerPage />} />
+          <Route path="/psyc-defence/sloth-bear" element={<SlothBearPage />} />
+          <Route path="/psyc-defence/leopard" element={<LeopardPage />} />
          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
