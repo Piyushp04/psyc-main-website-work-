@@ -1,279 +1,394 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, ExternalLink, Github, Globe, Code, Rocket, Shield, Zap } from 'lucide-react';
+import { ArrowRight, Building, MapPin } from 'lucide-react';
 import ThreeDBackground from '@/components/ThreeDBackground';
 
 const PortfolioHome = () => {
-  const projects = [
-    {
-      id: 1,
-             title: "PSYC Defence",
-       subtitle: "Wildlife Conservation Technology",
-       description: "Our comprehensive website showcasing PSYC's innovative drone-based wildlife tranquilization technology. Features include interactive demos, detailed animal profiles, and comprehensive information about our conservation solutions.",
-       image: "/lovable-uploads/deda9b5b-0e4e-44a9-9c37-904e85806e7c.png",
-       tags: ["Wildlife", "Conservation", "Drone Tech"],
-       liveUrl: "/psyc-defence",
-       githubUrl: "#",
-       category: "Main Platform",
-       featured: true,
-       icon: Shield
-    },
-         {
-       id: 2,
-       title: "Drone Technology",
-       subtitle: "Advanced Aerial Solutions",
-       description: "Cutting-edge drone technology for wildlife monitoring, conservation research, and environmental protection.",
-       image: "/placeholder.svg",
-       tags: ["Drone Tech", "Conservation", "Research"],
-       liveUrl: "#",
-       githubUrl: "#",
-       category: "Technology",
-       featured: false,
-       icon: Rocket
-     },
-     {
-       id: 3,
-       title: "Conservation Research",
-       subtitle: "Data & Analytics",
-       description: "Comprehensive data collection and analysis tools for wildlife conservation and habitat monitoring.",
-       image: "/placeholder.svg",
-       tags: ["Data", "Analytics", "Research"],
-       liveUrl: "#",
-       githubUrl: "#",
-       category: "Research",
-       featured: false,
-       icon: Zap
-     }
-  ];
-
-    return (
+  return (
     <div className="min-h-screen bg-psyc-darkest text-white relative overflow-hidden">
-      <ThreeDBackground />
-      <div className="relative z-10">
-        {/* Header */}
-        <header id="hero" className="container mx-auto px-6 py-8 relative z-10">
-        {/* Logo */}
-        <div className="flex justify-start mb-8">
-          <img 
-            src="/lovable-uploads/deda9b5b-0e4e-44a9-9c37-904e85806e7c.png" 
-            alt="PSYC Logo" 
-            className="h-16 w-auto"
-          />
+      {/* Custom Background with Particles and Lines */}
+      <div className="absolute inset-0 bg-psyc-darkest">
+        {/* Glowing Particles */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-2 h-2 bg-orange-400 rounded-full animate-pulse opacity-60"></div>
+          <div className="absolute top-40 right-32 w-1 h-1 bg-yellow-400 rounded-full animate-pulse opacity-80"></div>
+          <div className="absolute top-60 left-1/4 w-1.5 h-1.5 bg-orange-300 rounded-full animate-pulse opacity-70"></div>
+          <div className="absolute top-80 right-1/3 w-1 h-1 bg-yellow-300 rounded-full animate-pulse opacity-90"></div>
+          <div className="absolute top-96 left-1/3 w-2 h-2 bg-orange-500 rounded-full animate-pulse opacity-50"></div>
+          <div className="absolute top-32 right-1/4 w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse opacity-60"></div>
+          <div className="absolute top-64 left-1/2 w-1 h-1 bg-orange-400 rounded-full animate-pulse opacity-80"></div>
+          <div className="absolute top-48 right-16 w-2 h-2 bg-yellow-400 rounded-full animate-pulse opacity-70"></div>
         </div>
         
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-psyc-orange to-amber-400 bg-clip-text text-transparent">
-            PSYC
-          </h1>
-          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto">
-            Welcome to PSYC
-          </p>
-        </motion.div>
-      </header>
+        {/* Abstract Curved Lines */}
+        <div className="absolute inset-0">
+          <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1000 800" fill="none">
+            <path d="M100 200 Q300 150 500 200 T900 200" stroke="rgba(251, 146, 60, 0.3)" strokeWidth="1" fill="none" className="animate-pulse"/>
+            <path d="M50 400 Q250 350 450 400 T850 400" stroke="rgba(251, 191, 36, 0.2)" strokeWidth="1" fill="none" className="animate-pulse"/>
+            <path d="M150 600 Q350 550 550 600 T950 600" stroke="rgba(245, 101, 101, 0.25)" strokeWidth="1" fill="none" className="animate-pulse"/>
+            <path d="M200 300 Q400 250 600 300 T1000 300" stroke="rgba(251, 146, 60, 0.15)" strokeWidth="1" fill="none" className="animate-pulse"/>
+          </svg>
+        </div>
+      </div>
+      
+      <div className="relative z-10">
+        {/* Header */}
+        <header className="container mx-auto px-6 py-8 relative z-10">
+          {/* Logo and Navigation */}
+          <div className="flex justify-between items-center mb-8">
+            {/* Logo */}
+            <div>
+              <img 
+                src="/lovable-uploads/deda9b5b-0e4e-44a9-9c37-904e85806e7c.png" 
+                alt="PSYC Logo" 
+                className="h-16 w-auto"
+              />
+            </div>
+            
+            {/* Navigation Menu */}
+            <nav className="hidden md:flex space-x-8">
+              <Link to="/" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+                Home
+              </Link>
+              <Link to="/about" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+                About
+              </Link>
+              <Link to="/capabilities" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+                Capabilities
+              </Link>
+              <Link to="/rd" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+                R&D
+              </Link>
+              <Link to="/contact" className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5">
+                Contact
+              </Link>
+            </nav>
+          </div>
+        </header>
 
-      {/* Featured Project */}
-      <section id="main-website" className="container mx-auto px-6 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-16"
-        >
-                     <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gradient">
-             Main Website
-           </h2>
-           {projects.filter(p => p.featured).map((project) => (
-             <div key={project.id} className="bg-black/40 backdrop-blur-sm rounded-xl p-8 border border-psyc-orange/30 cyber-border relative overflow-hidden">
-               {/* Animated gradient background */}
-               <div className="absolute inset-0 bg-gradient-to-br from-black/0 via-psyc-orange/5 to-black/0 z-0 animate-pulse opacity-50"></div>
-               
-               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative z-10">
-                 <div className="space-y-6">
-                   <div>
-                     <span className="inline-block px-3 py-1 bg-psyc-orange/20 text-psyc-orange rounded-full text-sm font-medium mb-4">
-                       {project.category}
-                     </span>
-                     <h3 className="text-3xl md:text-4xl font-bold mb-2 group-hover:text-psyc-orange transition-colors">
-                       {project.title}
-                     </h3>
-                     <p className="text-xl text-psyc-orange mb-4">{project.subtitle}</p>
-                     <p className="text-white/80 text-lg leading-relaxed">
-                       {project.description}
-                     </p>
-                   </div>
-                   
-                   <div className="flex flex-wrap gap-2 mb-6">
-                     {project.tags.map((tag, index) => (
-                       <span
-                         key={index}
-                         className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-sm border border-white/20"
-                       >
-                         {tag}
-                       </span>
-                     ))}
-                   </div>
-                   
-                   <div className="flex flex-wrap gap-4">
-                     <Link
-                       to={project.liveUrl}
-                       className="inline-flex items-center px-6 py-3 bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium rounded-lg transition-all duration-300 group-hover:scale-105"
-                     >
-                       <Globe className="w-5 h-5 mr-2" />
-                       View Project
-                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                     </Link>
-                     {project.githubUrl !== "#" && (
-                       <a
-                         href={project.githubUrl}
-                         target="_blank"
-                         rel="noopener noreferrer"
-                         className="inline-flex items-center px-6 py-3 bg-white/10 text-white font-medium rounded-lg hover:bg-white/20 transition-all duration-300 border border-white/20"
-                       >
-                         <Github className="w-5 h-5 mr-2" />
-                         Source Code
-                       </a>
-                     )}
-                   </div>
-                 </div>
-                 
-                 <div className="relative">
-                   <div className="aspect-video bg-gradient-to-br from-psyc-orange/20 to-amber-400/20 rounded-xl border border-psyc-orange/30 overflow-hidden">
-                     <img
-                       src={project.image}
-                       alt={project.title}
-                       className="w-full h-full object-cover"
-                     />
-                   </div>
-                 </div>
-               </div>
-             </div>
-           ))}
-        </motion.div>
-      </section>
+        {/* Hero Section - Main PSYC Homepage */}
+        <section className="py-20 text-center">
+          <div className="container mx-auto px-4 md:px-8">
+            <motion.h1 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-7xl md:text-8xl font-bold mb-8 text-psyc-orange"
+            >
+              PSYC
+            </motion.h1>
+            <motion.h2 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-5xl md:text-6xl font-bold mb-8 text-white"
+            >
+              Aerospace and Defence Industry
+            </motion.h2>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="w-32 h-1 bg-psyc-orange mx-auto mb-10"
+            ></motion.div>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-2xl md:text-3xl text-white/80 max-w-4xl mx-auto mb-16"
+            >
+              AI-First Payload Systems | <span className="text-psyc-orange">Computer Vision & Automation</span> for Next-Gen Drones
+            </motion.p>
+            
+            {/* Call-to-Action Buttons */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
+              <Link to="/psyc-defence">
+                <button className="bg-psyc-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-psyc-orange/90 hover:scale-105 transition-all duration-200 flex items-center gap-2 shadow-lg shadow-psyc-orange/25">
+                  Explore Capabilities →
+                </button>
+              </Link>
+              <button className="border border-psyc-orange text-psyc-orange px-8 py-3 rounded-lg font-semibold hover:bg-psyc-orange hover:text-white transition-all duration-200 hover:scale-105 shadow-lg shadow-psyc-orange/25">
+                Get in Touch
+              </button>
+            </motion.div>
+          </div>
+        </section>
 
-      {/* All Projects */}
-      <section id="services" className="container mx-auto px-6 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-                     <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gradient">
-             Our Services & Projects
-           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
+        {/* Footer */}
+        <footer className="bg-gradient-to-b from-gray-800 to-black text-white pt-16 pb-8 relative overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-psyc-orange/10 rounded-full blur-3xl animate-pulse" />
+            <div
+              className="absolute bottom-20 right-20 w-48 h-48 bg-psyc-orange/5 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "2s" }}
+            />
+            <div
+              className="absolute top-1/2 left-1/3 w-24 h-24 bg-psyc-orange/8 rounded-full blur-2xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            />
+          </div>
+
+          {/* Subtle grid pattern */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-30" />
+
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+              {/* Logo and mission */}
               <motion.div
-                key={project.id}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group"
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="col-span-1"
               >
-                <div className="aspect-video bg-gradient-to-br from-psyc-orange/20 to-amber-400/20 rounded-lg mb-4 overflow-hidden">
+                <div className="flex items-center space-x-2 mb-4">
                   <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
+                    src="/lovable-uploads/deda9b5b-0e4e-44a9-9c37-904e85806e7c.png"
+                    alt="PSYC Logo"
+                    className="h-16 w-auto"
                   />
                 </div>
-                
-                <div className="space-y-4">
-                  <div>
-                    <span className="inline-block px-2 py-1 bg-psyc-orange/20 text-psyc-orange rounded-full text-xs font-medium mb-2">
-                      {project.category}
-                    </span>
-                    <h3 className="text-xl font-bold mb-1 group-hover:text-psyc-orange transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-psyc-orange text-sm mb-2">{project.subtitle}</p>
-                    <p className="text-white/80 text-sm leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.slice(0, 3).map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-2 py-1 bg-white/10 text-white/70 rounded-full text-xs border border-white/20"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex gap-2">
-                    <Link
-                      to={project.liveUrl}
-                      className="inline-flex items-center px-4 py-2 bg-psyc-orange hover:bg-psyc-orange/90 text-white text-sm font-medium rounded-lg transition-all duration-300 flex-1 justify-center"
+              </motion.div>
+
+              {/* Social links */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="col-span-1"
+              >
+                <h3 className="font-bold text-lg mb-4 text-gradient">Follow Us</h3>
+                <ul className="space-y-2 text-white/70">
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="https://www.linkedin.com/company/passive-surveillance-yielding-control-psyc/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-psyc-orange transition-colors relative group"
                     >
-                      <Globe className="w-4 h-4 mr-2" />
-                      View
-                    </Link>
-                    {project.githubUrl !== "#" && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-white/10 text-white text-sm font-medium rounded-lg hover:bg-white/20 transition-all duration-300 border border-white/20"
-                      >
-                        <Github className="w-4 h-4" />
-                      </a>
-                    )}
+                      LinkedIn
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="https://youtube.com/@psyc.industries?si=4-AotQTLGb_gC0aa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      YouTube
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="https://www.instagram.com/psycdefence?igsh=cGlpdzVjYTV6cWxy&utm_source=qr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      Instagram
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="https://x.com/psycdefence?s=11"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      X
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                </ul>
+              </motion.div>
+
+              {/* Navigation */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="col-span-1"
+              >
+                <h3 className="font-bold text-lg mb-4 text-gradient">Quick Nav</h3>
+                <ul className="space-y-2 text-white/70">
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="#hero"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      About Us
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="#solution"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      Solution
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="#features"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      Features
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="#demo"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      Drone Demo
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                  <motion.li
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <a
+                      href="#testimonials"
+                      className="hover:text-psyc-orange transition-colors relative group"
+                    >
+                      Reactions
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-psyc-orange group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                  </motion.li>
+                </ul>
+              </motion.div>
+
+              {/* Contact & Location */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="col-span-1"
+              >
+                <h3 className="font-bold text-lg mb-4 text-gradient">
+                  Contact & Location
+                </h3>
+                <div className="space-y-4 text-white/70 text-sm">
+                  <div className="flex items-start space-x-2">
+                    <Building className="w-4 h-4 text-psyc-orange mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="text-white/90 font-medium">Registered Office:</p>
+                      <p className="leading-relaxed text-xs">
+                        C/O T N VISHUKUMAR<br />
+                        Lingadahalli Main Road<br />
+                        Tarikere, Chickmagalur<br />
+                        Karnataka - 577228
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="w-4 h-4 text-psyc-orange mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="text-white/90 font-medium">Incubated at:</p>
+                      <p className="leading-relaxed text-xs">
+                        AICDSU Foundation<br />
+                        VJPR+WGG, Service Rd<br />
+                        Kudlu Main Rd, Srinivasa Nagar<br />
+                        Hal Layout, Singasandra<br />
+                        Bengaluru, Karnataka - 560068
+                      </p>
+                    </div>
                   </div>
                 </div>
               </motion.div>
-            ))}
+
+              {/* Map Location */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="col-span-1"
+              >
+                <h3 className="font-bold text-lg mb-4 text-gradient">Our Location</h3>
+                <div className="relative w-full h-48 rounded-lg overflow-hidden border border-psyc-orange/30">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.3295070137968!2d77.6411235120577!3d12.887260256820102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b023dade9d%3A0x35272e55303bd711!2sDayananda+Sagar+University!5e0!3m2!1sen!2sin!4v1554278492479!5m2!1sen!2sin"
+                    className="absolute inset-0 w-full h-full"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Footer Bottom */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center"
+            >
+              <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                <Link 
+                  to="/" 
+                  className="text-psyc-orange hover:text-amber-400 transition-colors text-sm font-medium"
+                >
+                  ← Back to Main Menu
+                </Link>
+                <p className="text-white/50 text-sm">
+                  &copy; {new Date().getFullYear()} PSYC Aerospace and Defence Industries Pvt. Ltd. All rights reserved.
+                </p>
+              </div>
+              
+              {/* Privacy Policy Button */}
+              <div className="mt-4 md:mt-0">
+                <button className="text-psyc-orange hover:text-amber-400 transition-colors text-sm font-medium px-4 py-2 rounded-lg hover:bg-psyc-orange/10">
+                  Privacy Policy
+                </button>
+              </div>
+            </motion.div>
           </div>
-        </motion.div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="container mx-auto px-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center max-w-4xl mx-auto"
-        >
-                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
-             About PSYC Defence
-           </h2>
-           <p className="text-white/80 text-lg leading-relaxed mb-8">
-             PSYC Defence is at the forefront of wildlife conservation technology, developing innovative 
-             drone-based solutions for safe and effective wildlife management. Our mission is to protect 
-             both wildlife and human safety through cutting-edge technology.
-           </p>
-           <div className="flex flex-wrap justify-center gap-4">
-             <div className="flex items-center px-4 py-2 bg-white/10 rounded-lg border border-white/20">
-               <Shield className="w-5 h-5 mr-2 text-psyc-orange" />
-               <span>Wildlife Conservation</span>
-             </div>
-             <div className="flex items-center px-4 py-2 bg-white/10 rounded-lg border border-white/20">
-               <Rocket className="w-5 h-5 mr-2 text-psyc-orange" />
-               <span>Drone Technology</span>
-             </div>
-             <div className="flex items-center px-4 py-2 bg-white/10 rounded-lg border border-white/20">
-               <Zap className="w-5 h-5 mr-2 text-psyc-orange" />
-               <span>Innovation</span>
-             </div>
-           </div>
-        </motion.div>
-      </section>
-
-      {/* Footer */}
-      <footer className="container mx-auto px-6 py-8 border-t border-white/10">
-        <div className="text-center text-white/50">
-          <p>&copy; 2025 PSYC PVT.LTD . All rights reserved.</p>
-        </div>
-      </footer>
+        </footer>
       </div>
     </div>
   );

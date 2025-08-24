@@ -29,7 +29,7 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-psyc-darkGreen/90 to-black text-white pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-gradient-to-b from-gray-800 to-black text-white pt-16 pb-8 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 bg-psyc-orange/10 rounded-full blur-3xl animate-pulse" />
@@ -201,8 +201,15 @@ const Footer = () => {
               ← Back to Main Menu
             </Link>
             <p className="text-white/50 text-sm">
-              &copy; {new Date().getFullYear()} PSYC PVT . LTD. All rights reserved.
+              &copy; {new Date().getFullYear()} PSYC Aerospace and Defence Industries Pvt. Ltd. All rights reserved.
             </p>
+          </div>
+          
+          {/* Privacy Policy Button */}
+          <div className="mt-4 md:mt-0">
+            <button className="text-psyc-orange hover:text-amber-400 transition-colors text-sm font-medium px-4 py-2 rounded-lg hover:bg-psyc-orange/10">
+              Privacy Policy
+            </button>
           </div>
         </motion.div>
       </div>
