@@ -124,11 +124,12 @@ const PortfolioHome = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
-              <Link to="/psyc-defence">
-                <button className="btn-primary w-full sm:w-auto px-8 py-3 bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40 flex items-center gap-2">
-                  Explore Capabilities →
-                </button>
-              </Link>
+              <button 
+                onClick={() => document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' })}
+                className="btn-primary w-full sm:w-auto px-8 py-3 bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40 flex items-center gap-2"
+              >
+                Explore Capabilities →
+              </button>
               <button className="btn-secondary w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-3 border-2 border-psyc-orange text-psyc-orange hover:bg-psyc-orange/20 font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40">
                 Get in Touch
               </button>
