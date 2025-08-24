@@ -7,34 +7,11 @@ import ThreeDBackground from '@/components/ThreeDBackground';
 const PortfolioHome = () => {
   return (
     <div className="min-h-screen bg-psyc-darkest text-white relative overflow-hidden">
-      {/* Custom Background with Particles and Lines */}
-      <div className="absolute inset-0 bg-psyc-darkest">
-        {/* Glowing Particles */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-2 h-2 bg-orange-400 rounded-full animate-pulse opacity-60"></div>
-          <div className="absolute top-40 right-32 w-1 h-1 bg-yellow-400 rounded-full animate-pulse opacity-80"></div>
-          <div className="absolute top-60 left-1/4 w-1.5 h-1.5 bg-orange-300 rounded-full animate-pulse opacity-70"></div>
-          <div className="absolute top-80 right-1/3 w-1 h-1 bg-yellow-300 rounded-full animate-pulse opacity-90"></div>
-          <div className="absolute top-96 left-1/3 w-2 h-2 bg-orange-500 rounded-full animate-pulse opacity-50"></div>
-          <div className="absolute top-32 right-1/4 w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse opacity-60"></div>
-          <div className="absolute top-64 left-1/2 w-1 h-1 bg-orange-400 rounded-full animate-pulse opacity-80"></div>
-          <div className="absolute top-48 right-16 w-2 h-2 bg-yellow-400 rounded-full animate-pulse opacity-70"></div>
-        </div>
-        
-        {/* Abstract Curved Lines */}
-        <div className="absolute inset-0">
-          <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1000 800" fill="none">
-            <path d="M100 200 Q300 150 500 200 T900 200" stroke="rgba(251, 146, 60, 0.3)" strokeWidth="1" fill="none" className="animate-pulse"/>
-            <path d="M50 400 Q250 350 450 400 T850 400" stroke="rgba(251, 191, 36, 0.2)" strokeWidth="1" fill="none" className="animate-pulse"/>
-            <path d="M150 600 Q350 550 550 600 T950 600" stroke="rgba(245, 101, 101, 0.25)" strokeWidth="1" fill="none" className="animate-pulse"/>
-            <path d="M200 300 Q400 250 600 300 T1000 300" stroke="rgba(251, 146, 60, 0.15)" strokeWidth="1" fill="none" className="animate-pulse"/>
-          </svg>
-        </div>
-      </div>
+      <ThreeDBackground />
       
       <div className="relative z-10">
         {/* Header */}
-        <header className="container mx-auto px-6 py-8 relative z-10">
+        <header className="max-w-7xl mx-auto px-4 md:px-6 py-4 relative z-10">
           {/* Logo and Navigation */}
           <div className="flex justify-between items-center mb-8">
             {/* Logo */}
@@ -50,37 +27,37 @@ const PortfolioHome = () => {
             <nav className="hidden md:flex space-x-8">
               <button 
                 onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 Home
               </button>
               <Link 
                 to="/psyc-defence#hero"
-                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 About
               </Link>
               <Link 
                 to="/psyc-defence#problem-solution"
-                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 Solutions
               </Link>
               <Link 
                 to="/psyc-defence#features"
-                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 Features
               </Link>
               <Link 
                 to="/psyc-defence#demo"
-                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 Drone Demo
               </Link>
               <Link 
                 to="/psyc-defence#testimonials"
-                className="text-white hover:text-psyc-orange transition-colors duration-200 px-4 py-2 border border-white/20 rounded-lg hover:border-psyc-orange/50 hover:bg-white/5"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 Reactions
               </Link>
@@ -90,7 +67,7 @@ const PortfolioHome = () => {
 
         {/* Hero Section - Main PSYC Homepage */}
         <section id="hero" className="py-20 text-center">
-          <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-7xl mx-auto px-4 md:px-8">
             <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -130,11 +107,11 @@ const PortfolioHome = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Link to="/psyc-defence">
-                <button className="bg-psyc-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-psyc-orange/90 hover:scale-105 transition-all duration-200 flex items-center gap-2 shadow-lg shadow-psyc-orange/25">
+                <button className="btn-primary w-full sm:w-auto px-8 py-3 bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40 flex items-center gap-2">
                   Explore Capabilities →
                 </button>
               </Link>
-              <button className="border border-psyc-orange text-psyc-orange px-8 py-3 rounded-lg font-semibold hover:bg-psyc-orange hover:text-white transition-all duration-200 hover:scale-105 shadow-lg shadow-psyc-orange/25">
+              <button className="btn-secondary w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-3 border-2 border-psyc-orange text-psyc-orange hover:bg-psyc-orange/20 font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40">
                 Get in Touch
               </button>
             </motion.div>
