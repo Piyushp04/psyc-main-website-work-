@@ -54,12 +54,36 @@ const PortfolioHome = () => {
               >
                 Home
               </button>
-              <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              <Link 
+                to="/psyc-defence#hero"
                 className="text-white/90 hover:text-white transition-colors"
               >
-                Contact
-              </button>
+                About
+              </Link>
+              <Link 
+                to="/psyc-defence#problem-solution"
+                className="text-white/90 hover:text-white transition-colors"
+              >
+                Solutions
+              </Link>
+              <Link 
+                to="/psyc-defence#features"
+                className="text-white/90 hover:text-white transition-colors"
+              >
+                Features
+              </Link>
+              <Link 
+                to="/psyc-defence#demo"
+                className="text-white/90 hover:text-white transition-colors"
+              >
+                Drone Demo
+              </Link>
+              <Link 
+                to="/psyc-defence#testimonials"
+                className="text-white/90 hover:text-white transition-colors"
+              >
+                Reactions
+              </Link>
             </nav>
           </div>
         </header>
@@ -115,166 +139,6 @@ const PortfolioHome = () => {
                 Get in Touch
               </button>
             </motion.div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-20 bg-black/20 relative overflow-hidden">
-          {/* Background elements */}
-          <div className="absolute inset-0">
-            <div className="absolute top-20 right-20 w-64 h-64 bg-psyc-orange/5 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-20 left-20 w-48 h-48 bg-psyc-orange/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "1s" }} />
-          </div>
-
-          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-                Get in <span className="text-psyc-orange">Touch</span>
-              </h2>
-              <p className="text-xl text-white/80 max-w-2xl mx-auto">
-                Ready to revolutionize your surveillance capabilities? Let's discuss how PSYC can transform your operations.
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
-              >
-                <h3 className="text-2xl font-bold mb-6 text-white">Send us a Message</h3>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      placeholder="First Name"
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-psyc-orange transition-colors"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Last Name"
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-psyc-orange transition-colors"
-                    />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-psyc-orange transition-colors"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Company/Organization"
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-psyc-orange transition-colors"
-                  />
-                  <textarea
-                    placeholder="Tell us about your requirements..."
-                    rows={4}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-psyc-orange transition-colors resize-none"
-                  ></textarea>
-                  <button
-                    type="submit"
-                    className="w-full btn-primary bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </motion.div>
-
-              {/* Contact Information */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="space-y-8"
-              >
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                  <h3 className="text-2xl font-bold mb-6 text-white">Contact Information</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-10 h-10 bg-psyc-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Building className="w-5 h-5 text-psyc-orange" />
-                      </div>
-                      <div>
-                        <p className="text-white/90 font-medium">Registered Office</p>
-                        <p className="text-white/70 text-sm leading-relaxed">
-                          C/O T N VISHUKUMAR<br />
-                          Lingadahalli Main Road<br />
-                          Tarikere, Chickmagalur<br />
-                          Karnataka - 577228
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-10 h-10 bg-psyc-orange/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-5 h-5 text-psyc-orange" />
-                      </div>
-                      <div>
-                        <p className="text-white/90 font-medium">Incubated at</p>
-                        <p className="text-white/70 text-sm leading-relaxed">
-                          AIC-DSU Foundation<br />
-                          VJPR+WGG, Service Rd<br />
-                          Kudlu Main Rd, Srinivasa Nagar<br />
-                          Hal Layout, Singasandra<br />
-                          Bengaluru, Karnataka - 560068
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                  <h3 className="text-2xl font-bold mb-6 text-white">Connect With Us</h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    <a
-                      href="https://www.linkedin.com/company/passive-surveillance-yielding-control-psyc/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-white/70 hover:text-psyc-orange transition-colors p-3 rounded-lg hover:bg-white/5"
-                    >
-                      <span className="text-lg">🔗</span>
-                      <span>LinkedIn</span>
-                    </a>
-                    <a
-                      href="https://youtube.com/@psyc.industries?si=4-AotQTLGb_gC0aa"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-white/70 hover:text-psyc-orange transition-colors p-3 rounded-lg hover:bg-white/5"
-                    >
-                      <span className="text-lg">📺</span>
-                      <span>YouTube</span>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/psycdefence?igsh=cGlpdzVjYTV6cWxy&utm_source=qr"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-white/70 hover:text-psyc-orange transition-colors p-3 rounded-lg hover:bg-white/5"
-                    >
-                      <span className="text-lg">📸</span>
-                      <span>Instagram</span>
-                    </a>
-                    <a
-                      href="https://x.com/psycdefence?s=11"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-white/70 hover:text-psyc-orange transition-colors p-3 rounded-lg hover:bg-white/5"
-                    >
-                      <span className="text-lg">𝕏</span>
-                      <span>Twitter</span>
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
           </div>
         </section>
 

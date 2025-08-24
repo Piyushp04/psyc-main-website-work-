@@ -90,7 +90,10 @@ const Navbar = () => {
                 ← Back to Main Menu
               </Button>
             </Link>
-            <Button className="bg-psyc-orange hover:bg-psyc-orange/90 text-white">
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-psyc-orange hover:bg-psyc-orange/90 text-white"
+            >
               Contact Us
             </Button>
           </div>
@@ -154,9 +157,12 @@ const Navbar = () => {
                   ← Back to Main Menu
                 </Button>
               </Link>
-              <Button className="w-full bg-psyc-orange hover:bg-psyc-orange/90 text-white">
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                className="w-full bg-psyc-orange hover:bg-psyc-orange/90 text-white"
+              >
                 Contact Us
-            </Button>
+              </Button>
             </div>
           </div>
         </div>

@@ -77,7 +77,7 @@ const CTASection = () => {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-[#0F131A] relative overflow-hidden">
+    <section id="contact" className="py-20 md:py-32 bg-[#0F131A] relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAwIDEwMG0tOTggMGE5OCw5OCAwIDEsMCAxOTYsMGE5OCw5OCAwIDEsMCAtMTk2LDBaIiBzdHJva2U9IiNGRjZGMDAiIHN0cm9rZS13aWR0aD0iMC41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjEiLz48L3N2Zz4=')] bg-repeat opacity-20"></div>
       
