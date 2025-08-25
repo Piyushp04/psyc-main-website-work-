@@ -612,9 +612,9 @@ const PortfolioHome = () => {
                   <h3 className="text-2xl font-bold text-psyc-orange">Open Source Platforms</h3>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -623,15 +623,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">ArduPilot</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">ArduPilot</h4>
                         <p className="text-sm text-white/80">Complete integration with ArduPilot autopilot systems</p>
                       </div>
                     </div>
                     <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Full Support</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -640,15 +640,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">PX4</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">PX4</h4>
                         <p className="text-sm text-white/80">Seamless compatibility with PX4 flight stack</p>
                       </div>
                     </div>
                     <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Compatible</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -657,15 +657,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">OpenDroneID</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">OpenDroneID</h4>
                         <p className="text-sm text-white/80">Remote ID compliance and integration</p>
                       </div>
                     </div>
                     <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Supported</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -674,7 +674,7 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">MAVLink</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">MAVLink</h4>
                         <p className="text-sm text-white/80">Native MAVLink protocol implementation</p>
                       </div>
                     </div>
@@ -698,9 +698,9 @@ const PortfolioHome = () => {
                   <h3 className="text-2xl font-bold text-psyc-orange">Commercial Systems</h3>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -709,15 +709,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">DJI SDK</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">DJI SDK</h4>
                         <p className="text-sm text-white/80">Official DJI integration certification</p>
                       </div>
                     </div>
                     <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Certified</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -726,15 +726,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">Autel</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Autel</h4>
                         <p className="text-sm text-white/80">Integration with Autel enterprise platforms</p>
                       </div>
                     </div>
                     <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Compatible</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -743,15 +743,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">Parrot</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Parrot</h4>
                         <p className="text-sm text-white/80">Parrot ANAFI and professional series support</p>
                       </div>
                     </div>
                     <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Supported</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -760,7 +760,7 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">Skydio</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Skydio</h4>
                         <p className="text-sm text-white/80">AI-to-AI system integration capabilities</p>
                       </div>
                     </div>
@@ -784,9 +784,9 @@ const PortfolioHome = () => {
                   <h3 className="text-2xl font-bold text-psyc-orange">Drone Segments</h3>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -795,15 +795,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">Fixed-Wing</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Fixed-Wing</h4>
                         <p className="text-sm text-white/80">Long-range fixed-wing platform optimization</p>
                       </div>
                     </div>
                     <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Optimized</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -812,15 +812,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">Multi-Rotor</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Multi-Rotor</h4>
                         <p className="text-sm text-white/80">Multi-rotor precision and stability enhancement</p>
                       </div>
                     </div>
                     <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Enhanced</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -829,15 +829,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">VTOL</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">VTOL</h4>
                         <p className="text-sm text-white/80">Vertical takeoff and landing specialized systems</p>
                       </div>
                     </div>
                     <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Specialized</span>
                   </div>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
@@ -846,7 +846,7 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange">Heavy-Lift</h4>
+                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Heavy-Lift</h4>
                         <p className="text-sm text-white/80">Heavy payload carrier optimization</p>
                       </div>
                     </div>
