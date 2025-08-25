@@ -924,7 +924,7 @@ const PortfolioHome = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Advanced Payload Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:bg-psyc-darkest/70 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer hover:scale-105">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Square with line icon */}
@@ -956,7 +956,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* AI Vision Technology */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:bg-psyc-darkest/70 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer hover:scale-105">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Lightbulb icon */}
@@ -986,7 +986,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Automation Operating Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:bg-psyc-darkest/70 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer hover:scale-105">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Gear icon */}
