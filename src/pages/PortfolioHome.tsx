@@ -218,6 +218,17 @@ const PortfolioHome = () => {
           </div>
           
           <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            {/* Section Title */}
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">
+                <span className="text-gradient">Cutting-Edge Features</span>
+              </h2>
+              <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
+              <p className="text-lg text-white/80 max-w-2xl mx-auto">
+                Advanced technologies and innovative solutions that define the future of aerospace and defence systems.
+              </p>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* AI-First Systems */}
               <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
