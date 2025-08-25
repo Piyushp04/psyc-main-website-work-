@@ -591,38 +591,81 @@ const PortfolioHome = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Lightning bolt icon */}
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                      {/* Plug/Power icon */}
+                      <path d="M12 2v10" strokeWidth="2"/>
+                      <path d="M8 12v8" strokeWidth="2"/>
+                      <path d="M16 12v8" strokeWidth="2"/>
+                      <path d="M4 12h16" strokeWidth="2"/>
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-psyc-orange">Open Source Platforms</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">ArduPilot</h4>
-                      <p className="text-sm text-white/80">Complete integration with ArduPilot autopilot systems</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">ArduPilot</h4>
+                        <p className="text-sm text-white/80">Complete integration with ArduPilot autopilot systems</p>
+                      </div>
                     </div>
                     <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Full Support</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">PX4</h4>
-                      <p className="text-sm text-white/80">Seamless compatibility with PX4 flight stack</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">PX4</h4>
+                        <p className="text-sm text-white/80">Seamless compatibility with PX4 flight stack</p>
+                      </div>
                     </div>
                     <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Compatible</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">OpenDroneID</h4>
-                      <p className="text-sm text-white/80">Remote ID compliance and integration</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">OpenDroneID</h4>
+                        <p className="text-sm text-white/80">Remote ID compliance and integration</p>
+                      </div>
                     </div>
                     <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Supported</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">MAVLink</h4>
-                      <p className="text-sm text-white/80">Native MAVLink protocol implementation</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">MAVLink</h4>
+                        <p className="text-sm text-white/80">Native MAVLink protocol implementation</p>
+                      </div>
                     </div>
                     <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Native</span>
                   </div>
@@ -634,38 +677,81 @@ const PortfolioHome = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Lightning bolt icon */}
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                      {/* Plug/Power icon */}
+                      <path d="M12 2v10" strokeWidth="2"/>
+                      <path d="M8 12v8" strokeWidth="2"/>
+                      <path d="M16 12v8" strokeWidth="2"/>
+                      <path d="M4 12h16" strokeWidth="2"/>
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-psyc-orange">Commercial Systems</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">DJI SDK</h4>
-                      <p className="text-sm text-white/80">Official DJI integration certification</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">DJI SDK</h4>
+                        <p className="text-sm text-white/80">Official DJI integration certification</p>
+                      </div>
                     </div>
                     <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Certified</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">Autel</h4>
-                      <p className="text-sm text-white/80">Integration with Autel enterprise platforms</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">Autel</h4>
+                        <p className="text-sm text-white/80">Integration with Autel enterprise platforms</p>
+                      </div>
                     </div>
                     <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Compatible</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">Parrot</h4>
-                      <p className="text-sm text-white/80">Parrot ANAFI and professional series support</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">Parrot</h4>
+                        <p className="text-sm text-white/80">Parrot ANAFI and professional series support</p>
+                      </div>
                     </div>
                     <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Supported</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">Skydio</h4>
-                      <p className="text-sm text-white/80">AI-to-AI system integration capabilities</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">Skydio</h4>
+                        <p className="text-sm text-white/80">AI-to-AI system integration capabilities</p>
+                      </div>
                     </div>
                     <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Integration</span>
                   </div>
@@ -677,38 +763,81 @@ const PortfolioHome = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Lightning bolt icon */}
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                      {/* Plug/Power icon */}
+                      <path d="M12 2v10" strokeWidth="2"/>
+                      <path d="M8 12v8" strokeWidth="2"/>
+                      <path d="M16 12v8" strokeWidth="2"/>
+                      <path d="M4 12h16" strokeWidth="2"/>
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-psyc-orange">Drone Segments</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">Fixed-Wing</h4>
-                      <p className="text-sm text-white/80">Long-range fixed-wing platform optimization</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">Fixed-Wing</h4>
+                        <p className="text-sm text-white/80">Long-range fixed-wing platform optimization</p>
+                      </div>
                     </div>
                     <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Optimized</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">Multi-Rotor</h4>
-                      <p className="text-sm text-white/80">Multi-rotor precision and stability enhancement</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">Multi-Rotor</h4>
+                        <p className="text-sm text-white/80">Multi-rotor precision and stability enhancement</p>
+                      </div>
                     </div>
                     <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Enhanced</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">VTOL</h4>
-                      <p className="text-sm text-white/80">Vertical takeoff and landing specialized systems</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">VTOL</h4>
+                        <p className="text-sm text-white/80">Vertical takeoff and landing specialized systems</p>
+                      </div>
                     </div>
                     <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Specialized</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-bold text-psyc-orange">Heavy-Lift</h4>
-                      <p className="text-sm text-white/80">Heavy payload carrier optimization</p>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2v10" strokeWidth="2"/>
+                          <path d="M8 12v8" strokeWidth="2"/>
+                          <path d="M16 12v8" strokeWidth="2"/>
+                          <path d="M4 12h16" strokeWidth="2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-psyc-orange">Heavy-Lift</h4>
+                        <p className="text-sm text-white/80">Heavy payload carrier optimization</p>
+                      </div>
                     </div>
                     <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Designed</span>
                   </div>
