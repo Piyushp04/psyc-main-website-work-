@@ -62,10 +62,10 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// PSYC Custom Colors - Matching Main Website
+				// PSYC Custom Colors - Matching Main Website Exactly
 				psyc: {
 					green: '#4C8C3C',
-					orange: '#FFA500',
+					orange: '#FF6F00',
 					gold: '#FFB74D',
 					brown: '#8B5A2B',
 					beige: '#F5F5DC',

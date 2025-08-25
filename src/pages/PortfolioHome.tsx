@@ -7,29 +7,108 @@ import ThreeDBackground from '@/components/ThreeDBackground';
 const PortfolioHome = () => {
   return (
     <div className="min-h-screen bg-psyc-darkest text-white relative overflow-hidden">
-      {/* Custom Background with Particles and Lines */}
+      {/* Custom Background - Matching Main Website Exactly */}
       <div className="absolute inset-0 bg-psyc-darkest">
-        {/* Glowing Particles */}
+        {/* Enhanced floating particles with better visibility - matching main website */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-2 h-2 bg-orange-400 rounded-full animate-pulse opacity-60"></div>
-          <div className="absolute top-40 right-32 w-1 h-1 bg-yellow-400 rounded-full animate-pulse opacity-80"></div>
-          <div className="absolute top-60 left-1/4 w-1.5 h-1.5 bg-orange-300 rounded-full animate-pulse opacity-70"></div>
-          <div className="absolute top-80 right-1/3 w-1 h-1 bg-yellow-300 rounded-full animate-pulse opacity-90"></div>
-          <div className="absolute top-96 left-1/3 w-2 h-2 bg-orange-500 rounded-full animate-pulse opacity-50"></div>
-          <div className="absolute top-32 right-1/4 w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse opacity-60"></div>
-          <div className="absolute top-64 left-1/2 w-1 h-1 bg-orange-400 rounded-full animate-pulse opacity-80"></div>
-          <div className="absolute top-48 right-16 w-2 h-2 bg-yellow-400 rounded-full animate-pulse opacity-70"></div>
+          {[...Array(40)].map((_, i) => (
+            <div
+              key={`particle-${i}`}
+              className="absolute rounded-full animate-particle-float"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                width: `${3 + Math.random() * 6}px`,
+                height: `${3 + Math.random() * 6}px`,
+                background: `radial-gradient(circle, rgba(255, 107, 53, ${0.7 + Math.random() * 0.3}) 0%, rgba(251, 191, 36, ${0.4 + Math.random() * 0.4}) 50%, rgba(245, 158, 11, ${0.2 + Math.random() * 0.2}) 100%)`,
+                animationDelay: `${Math.random() * 20}s`,
+                animationDuration: `${15 + Math.random() * 10}s`,
+                filter: 'blur(0.8px)',
+                boxShadow: `0 0 ${15 + Math.random() * 20}px rgba(255, 107, 53, ${0.5 + Math.random() * 0.3}), 0 0 ${8 + Math.random() * 12}px rgba(251, 191, 36, ${0.3 + Math.random() * 0.2})`
+              }}
+            />
+          ))}
         </div>
+
+        {/* Glowing connection lines - matching main website */}
+        <div className="absolute inset-0">
+          {[...Array(12)].map((_, i) => (
+            <div
+              key={`line-${i}`}
+              className="absolute animate-glow-pulse"
+              style={{
+                left: `${Math.random() * 80 + 10}%`,
+                top: `${Math.random() * 80 + 10}%`,
+                width: `${60 + Math.random() * 120}px`,
+                height: '2px',
+                background: `linear-gradient(90deg, transparent 0%, rgba(255, 107, 53, 0.3) 20%, rgba(251, 191, 36, 0.4) 50%, rgba(255, 107, 53, 0.3) 80%, transparent 100%)`,
+                transform: `rotate(${Math.random() * 360}deg)`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${8 + Math.random() * 6}s`,
+                filter: 'blur(0.5px)',
+                boxShadow: `0 0 ${8 + Math.random() * 15}px rgba(255, 107, 53, 0.4), 0 0 ${4 + Math.random() * 8}px rgba(251, 191, 36, 0.3)`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Enhanced grid pattern with smooth parallax - matching main website */}
+        <div 
+          className="absolute inset-0 opacity-20 transition-transform duration-700 ease-out"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(255, 107, 53, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 107, 53, 0.2) 1px, transparent 1px)',
+            backgroundSize: '60px 60px'
+          }}
+        />
         
-        {/* Abstract Curved Lines */}
+        {/* Additional floating glow elements */}
         <div className="absolute inset-0">
-          <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1000 800" fill="none">
-            <path d="M100 200 Q300 150 500 200 T900 200" stroke="rgba(251, 146, 60, 0.3)" strokeWidth="1" fill="none" className="animate-pulse"/>
-            <path d="M50 400 Q250 350 450 400 T850 400" stroke="rgba(251, 191, 36, 0.2)" strokeWidth="1" fill="none" className="animate-pulse"/>
-            <path d="M150 600 Q350 550 550 600 T950 600" stroke="rgba(245, 101, 101, 0.25)" strokeWidth="1" fill="none" className="animate-pulse"/>
-            <path d="M200 300 Q400 250 600 300 T1000 300" stroke="rgba(251, 146, 60, 0.15)" strokeWidth="1" fill="none" className="animate-pulse"/>
-          </svg>
+          {[...Array(15)].map((_, i) => (
+            <div
+              key={`glow-dot-${i}`}
+              className="absolute rounded-full animate-pulse"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                width: `${1 + Math.random() * 3}px`,
+                height: `${1 + Math.random() * 3}px`,
+                background: `radial-gradient(circle, rgba(251, 191, 36, ${0.8 + Math.random() * 0.2}) 0%, transparent 100%)`,
+                animationDelay: `${Math.random() * 10}s`,
+                animationDuration: `${3 + Math.random() * 4}s`,
+                filter: 'blur(0.3px)',
+                boxShadow: `0 0 ${6 + Math.random() * 10}px rgba(251, 191, 36, ${0.6 + Math.random() * 0.3})`
+              }}
+            />
+          ))}
         </div>
+
+        {/* Enhanced glowing orbs with smooth movement - matching main website */}
+        <div 
+          className="absolute top-1/4 left-1/4 w-48 h-48 rounded-full blur-2xl animate-glow-pulse transition-transform duration-1000 ease-out" 
+          style={{ 
+            background: 'radial-gradient(circle, rgba(255, 107, 53, 0.4) 0%, rgba(251, 191, 36, 0.25) 30%, rgba(245, 158, 11, 0.15) 60%, transparent 100%)',
+            animationDuration: '8s',
+            boxShadow: '0 0 60px rgba(255, 107, 53, 0.3), 0 0 30px rgba(251, 191, 36, 0.2)'
+          }}
+        />
+        <div 
+          className="absolute bottom-1/3 right-1/4 w-36 h-36 rounded-full blur-2xl animate-glow-pulse transition-transform duration-1000 ease-out" 
+          style={{ 
+            background: 'radial-gradient(circle, rgba(255, 107, 53, 0.35) 0%, rgba(251, 191, 36, 0.2) 40%, rgba(245, 158, 11, 0.1) 70%, transparent 100%)',
+            animationDuration: '10s', 
+            animationDelay: '2s',
+            boxShadow: '0 0 50px rgba(255, 107, 53, 0.25), 0 0 25px rgba(251, 191, 36, 0.15)'
+          }}
+        />
+        <div 
+          className="absolute top-1/2 right-1/6 w-28 h-28 rounded-full blur-xl animate-glow-pulse transition-transform duration-1000 ease-out" 
+          style={{ 
+            background: 'radial-gradient(circle, rgba(255, 107, 53, 0.3) 0%, rgba(251, 191, 36, 0.18) 45%, rgba(245, 158, 11, 0.08) 75%, transparent 100%)',
+            animationDuration: '12s', 
+            animationDelay: '4s',
+            boxShadow: '0 0 40px rgba(255, 107, 53, 0.2), 0 0 20px rgba(251, 191, 36, 0.12)'
+          }}
+        />
       </div>
       
       <div className="relative z-10">
@@ -84,54 +163,63 @@ const PortfolioHome = () => {
 
         {/* Hero Section - Main PSYC Homepage */}
         <section id="hero" className="py-20 text-center relative overflow-hidden">
-          {/* Background Elements - Matching Main Website */}
+          {/* Background Elements - Matching Main Website Exactly */}
           <div className="absolute inset-0 z-0">
-            {/* Glowing particles */}
-            {[...Array(30)].map((_, i) => (
+            {/* Enhanced floating particles with better visibility - matching main website */}
+            {[...Array(35)].map((_, i) => (
               <div
                 key={`particle-${i}`}
-                className="absolute rounded-full animate-pulse"
+                className="absolute rounded-full animate-particle-float"
                 style={{
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
-                  width: `${2 + Math.random() * 4}px`,
-                  height: `${2 + Math.random() * 4}px`,
-                  background: `radial-gradient(circle, rgba(255, 140, 0, ${0.6 + Math.random() * 0.4}) 0%, rgba(255, 183, 77, ${0.3 + Math.random() * 0.3}) 70%, transparent 100%)`,
-                  animationDelay: `${Math.random() * 15}s`,
-                  animationDuration: `${12 + Math.random() * 8}s`,
-                  filter: 'blur(0.5px)',
-                  boxShadow: '0 0 10px rgba(255, 140, 0, 0.4)'
+                  width: `${3 + Math.random() * 6}px`,
+                  height: `${3 + Math.random() * 6}px`,
+                  background: `radial-gradient(circle, rgba(255, 107, 53, ${0.7 + Math.random() * 0.3}) 0%, rgba(251, 191, 36, ${0.4 + Math.random() * 0.4}) 50%, rgba(245, 158, 11, ${0.2 + Math.random() * 0.2}) 100%)`,
+                  animationDelay: `${Math.random() * 20}s`,
+                  animationDuration: `${15 + Math.random() * 10}s`,
+                  filter: 'blur(0.8px)',
+                  boxShadow: `0 0 ${15 + Math.random() * 20}px rgba(255, 107, 53, ${0.5 + Math.random() * 0.3}), 0 0 ${8 + Math.random() * 12}px rgba(251, 191, 36, ${0.3 + Math.random() * 0.2})`
                 }}
               />
             ))}
             
             {/* Glowing connection lines */}
-            {[...Array(8)].map((_, i) => (
+            {[...Array(10)].map((_, i) => (
               <div
                 key={`line-${i}`}
-                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/20 to-transparent animate-pulse"
+                className="absolute animate-glow-pulse"
                 style={{
                   left: `${Math.random() * 80 + 10}%`,
                   top: `${Math.random() * 80 + 10}%`,
-                  width: `${50 + Math.random() * 100}px`,
-                  height: '1px',
+                  width: `${60 + Math.random() * 120}px`,
+                  height: '2px',
+                  background: `linear-gradient(90deg, transparent 0%, rgba(255, 107, 53, 0.3) 20%, rgba(251, 191, 36, 0.4) 50%, rgba(255, 107, 53, 0.3) 80%, transparent 100%)`,
                   transform: `rotate(${Math.random() * 360}deg)`,
-                  animationDelay: `${Math.random() * 6}s`,
-                  animationDuration: `${6 + Math.random() * 4}s`
+                  animationDelay: `${Math.random() * 8}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: `0 0 ${8 + Math.random() * 15}px rgba(255, 107, 53, 0.4), 0 0 ${4 + Math.random() * 8}px rgba(251, 191, 36, 0.3)`
                 }}
               />
             ))}
           </div>
           
           <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-            <motion.h1 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-7xl md:text-8xl font-bold mb-8 text-psyc-orange"
-            >
-              PSYC
-            </motion.h1>
+                                        <motion.h1 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-7xl md:text-8xl font-bold mb-8"
+                style={{ 
+                  background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 50%, #f59e0b 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}
+              >
+                PSYC
+              </motion.h1>
             <motion.h2 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -150,9 +238,20 @@ const PortfolioHome = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-2xl md:text-3xl text-white/80 max-w-4xl mx-auto mb-16"
+              className="text-2xl md:text-3xl max-w-4xl mx-auto mb-16"
+              style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}
             >
-              AI-First Payload Systems | <span className="text-psyc-orange">Computer Vision & Automation</span> for Next-Gen Drones
+              AI-First Payload Systems | <span style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Computer Vision & Automation</span> for Next-Gen Drones
             </motion.p>
 
             
@@ -165,11 +264,11 @@ const PortfolioHome = () => {
             >
               <button 
                 onClick={() => document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-primary w-full sm:w-auto px-8 py-3 bg-psyc-orange hover:bg-psyc-orange/90 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40 flex items-center gap-2"
+                className="btn-primary w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/50 flex items-center gap-2"
               >
                 Explore Capabilities →
               </button>
-              <button className="btn-secondary w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-3 border-2 border-psyc-orange text-psyc-orange hover:bg-psyc-orange/20 font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-psyc-orange/40">
+              <button className="btn-secondary w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-3 border-2 border-orange-500 text-orange-500 hover:bg-gradient-to-r hover:from-orange-500 hover:to-yellow-500 hover:text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/50">
                 Get in Touch
               </button>
             </motion.div>
@@ -190,11 +289,11 @@ const PortfolioHome = () => {
                   top: `${Math.random() * 100}%`,
                   width: `${2 + Math.random() * 3}px`,
                   height: `${2 + Math.random() * 3}px`,
-                  background: `radial-gradient(circle, rgba(255, 140, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 183, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
                   animationDelay: `${Math.random() * 10}s`,
                   animationDuration: `${8 + Math.random() * 6}s`,
                   filter: 'blur(0.5px)',
-                  boxShadow: '0 0 8px rgba(255, 140, 0, 0.3)'
+                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
                 }}
               />
             ))}
@@ -220,9 +319,14 @@ const PortfolioHome = () => {
           <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             {/* Section Title */}
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6">
-                <span className="text-gradient">Cutting-Edge Features</span>
-              </h2>
+                              <h2 className="text-4xl font-bold mb-6">
+                  <span style={{ 
+                    background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text'
+                  }}>Cutting-Edge Features</span>
+                </h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 Advanced technologies and innovative solutions that define the future of aerospace and defence systems.
@@ -231,9 +335,17 @@ const PortfolioHome = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* AI-First Systems */}
-              <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="text-center hover:scale-105 transition-all duration-500 ease-out cursor-pointer group relative overflow-hidden bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Circuit board/chip icon */}
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
                     <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
@@ -250,9 +362,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Computer Vision */}
-              <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="text-center hover:scale-105 transition-all duration-500 ease-out cursor-pointer group relative overflow-hidden bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Eye icon */}
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
                     <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" strokeWidth="2"/>
@@ -264,9 +384,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Universal Integration */}
-              <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="text-center hover:scale-105 transition-all duration-500 ease-out cursor-pointer group relative overflow-hidden bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Lightning bolt icon */}
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
                   </svg>
@@ -279,11 +407,55 @@ const PortfolioHome = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section id="about" className="py-20 bg-black text-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={`about-particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 3}px`,
+                  height: `${2 + Math.random() * 3}px`,
+                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 10}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
+                }}
+              />
+            ))}
+            
+            {/* Subtle connection lines */}
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={`about-line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${40 + Math.random() * 80}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${4 + Math.random() * 3}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             {/* Centered Title */}
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-psyc-orange">About PSYC</h2>
+              <h2 className="text-4xl font-bold mb-6" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>About PSYC</h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 We are at the forefront of aerospace and defence innovation, specializing in AI-first payload systems that redefine what's possible in autonomous operations.
@@ -309,9 +481,17 @@ const PortfolioHome = () => {
 
               {/* Right Column - Feature Cards */}
               <div className="space-y-6">
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                  
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    <svg className="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Target icon */}
                       <circle cx="12" cy="12" r="10" strokeWidth="2"/>
                       <circle cx="12" cy="12" r="6" strokeWidth="2"/>
@@ -322,9 +502,17 @@ const PortfolioHome = () => {
                   <p className="text-white/80">Every system we develop is engineered with military-grade precision and reliability standards.</p>
                 </div>
 
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                  
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    <svg className="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Lightning bolt icon */}
                       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
                     </svg>
@@ -333,9 +521,17 @@ const PortfolioHome = () => {
                   <p className="text-white/80">Continuous R&D ensures our solutions stay ahead of evolving aerospace challenges.</p>
                 </div>
 
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                  
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    <svg className="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Globe icon */}
                       <circle cx="12" cy="12" r="10" strokeWidth="2"/>
                       <line x1="2" y1="12" x2="22" y2="12" strokeWidth="2"/>
@@ -351,10 +547,54 @@ const PortfolioHome = () => {
         </section>
 
         {/* Capabilities Section */}
-        <section id="capabilities" className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section id="capabilities" className="py-20 bg-black text-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={`capabilities-particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 3}px`,
+                  height: `${2 + Math.random() * 3}px`,
+                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 10}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
+                }}
+              />
+            ))}
+            
+            {/* Subtle connection lines */}
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={`capabilities-line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${40 + Math.random() * 80}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${4 + Math.random() * 3}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4 text-psyc-orange">Our Capabilities</h2>
+              <h2 className="text-4xl font-bold mb-4" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Our Capabilities</h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 Cutting-edge technologies and methodologies that define the future of aerospace and defence systems.
@@ -363,9 +603,17 @@ const PortfolioHome = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* AI-First Payload Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Brain/Network icon */}
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
                     <path d="M8 14s1.5 2 4 2 4-2 4-2" strokeWidth="2"/>
@@ -388,9 +636,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Computer Vision Technology */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Camera icon */}
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" strokeWidth="2"/>
                     <circle cx="12" cy="13" r="4" strokeWidth="2"/>
@@ -410,9 +666,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Automation Frameworks */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Gear icon */}
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
                     <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" strokeWidth="2"/>
@@ -433,9 +697,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Defence-Grade Security */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Shield icon */}
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeWidth="2"/>
                     <path d="M12 8v8" strokeWidth="2"/>
@@ -455,8 +727,16 @@ const PortfolioHome = () => {
               </div>
 
               {/* Sensor Integration */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Radar/Target icon */}
                     <circle cx="12" cy="12" r="10" strokeWidth="2"/>
@@ -479,8 +759,16 @@ const PortfolioHome = () => {
               </div>
 
               {/* Edge Computing */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Circuit board/Chip icon */}
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
@@ -507,9 +795,17 @@ const PortfolioHome = () => {
 
               {/* Darting Tariort - Clickable to Main Website */}
               <Link to="/psyc-defence#hero" className="block">
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 cursor-pointer group">
-                  <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-8 h-8 bg-white rounded"></div>
+                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                  
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    <div className="w-8 h-8 bg-white rounded relative z-10"></div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-psyc-orange group-hover:text-white transition-colors duration-300">Darting Turret</h3>
                   <p className="text-white/80 mb-6">
@@ -528,9 +824,17 @@ const PortfolioHome = () => {
               </Link>
 
               {/* Empty Box 2 */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <div className="w-8 h-8 bg-white rounded-full relative z-10"></div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Capability 8</h3>
                 <p className="text-white/80 mb-6">
@@ -545,9 +849,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Empty Box 3 */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <div className="w-8 h-8 bg-white transform rotate-45 relative z-10"></div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Capability 9</h3>
                 <p className="text-white/80 mb-6">
@@ -568,7 +880,12 @@ const PortfolioHome = () => {
         <section className="py-20 bg-black text-white">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center">
-              <h2 className="text-4xl font-bold mb-6 text-psyc-orange">Ready to Deploy</h2>
+              <h2 className="text-4xl font-bold mb-6" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Ready to Deploy</h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
                 All our systems are production-ready and designed for immediate integration into existing aerospace and defence infrastructure.
@@ -589,7 +906,12 @@ const PortfolioHome = () => {
         <section className="py-20 bg-black text-white">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4 text-psyc-orange">Integration Support</h2>
+              <h2 className="text-4xl font-bold mb-4" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Integration Support</h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 Universal compatibility across drone ecosystems. Our systems integrate seamlessly with both open-source and commercial platforms.
@@ -859,10 +1181,54 @@ const PortfolioHome = () => {
         </section>
 
         {/* Integration Process Section */}
-        <section className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section className="py-20 bg-black text-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={`integration-particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 3}px`,
+                  height: `${2 + Math.random() * 3}px`,
+                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 10}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
+                }}
+              />
+            ))}
+            
+            {/* Subtle connection lines */}
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={`integration-line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${40 + Math.random() * 80}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${4 + Math.random() * 3}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-8 text-psyc-orange">Integration Process</h2>
+              <h2 className="text-4xl font-bold mb-8" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Integration Process</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
@@ -912,10 +1278,54 @@ const PortfolioHome = () => {
         </section>
 
         {/* Research & Development Section */}
-        <section id="research-development" className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section id="research-development" className="py-20 bg-black text-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={`rd-particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 3}px`,
+                  height: `${2 + Math.random() * 3}px`,
+                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 10}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
+                }}
+              />
+            ))}
+            
+            {/* Subtle connection lines */}
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={`rd-line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${40 + Math.random() * 80}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${4 + Math.random() * 3}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4 text-psyc-orange">Research & Development</h2>
+              <h2 className="text-4xl font-bold mb-4" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Research & Development</h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 Pioneering the future of aerospace technology through continuous innovation and cutting-edge research initiatives.
@@ -924,9 +1334,17 @@ const PortfolioHome = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Advanced Payload Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:bg-psyc-darkest/70 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer hover:scale-105">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Square with line icon */}
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
                     <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
@@ -956,9 +1374,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* AI Vision Technology */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:bg-psyc-darkest/70 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer hover:scale-105">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Lightbulb icon */}
                     <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" strokeWidth="2"/>
                   </svg>
@@ -986,9 +1412,17 @@ const PortfolioHome = () => {
               </div>
 
               {/* Automation Operating Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:bg-psyc-darkest/70 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer hover:scale-105">
-                <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Gear icon */}
                     <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" strokeWidth="2"/>
                     <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" strokeWidth="2"/>
@@ -1020,10 +1454,54 @@ const PortfolioHome = () => {
         </section>
 
         {/* Innovation Focus Areas Section */}
-        <section className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section className="py-20 bg-black text-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={`innovation-particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 3}px`,
+                  height: `${2 + Math.random() * 3}px`,
+                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 10}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
+                }}
+              />
+            ))}
+            
+            {/* Subtle connection lines */}
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={`innovation-line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${40 + Math.random() * 80}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${4 + Math.random() * 3}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-8 text-psyc-orange">Innovation Focus Areas</h2>
+              <h2 className="text-4xl font-bold mb-8" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Innovation Focus Areas</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -1073,7 +1551,12 @@ const PortfolioHome = () => {
         <section className="py-20 bg-black text-white">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center">
-              <h2 className="text-4xl font-bold mb-6 text-psyc-orange">Research Partnerships</h2>
+              <h2 className="text-4xl font-bold mb-6" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Research Partnerships</h2>
               <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
                 We collaborate with leading academic institutions and industry partners to advance the frontiers of aerospace and defence technology.
               </p>
@@ -1093,7 +1576,12 @@ const PortfolioHome = () => {
         <section id="contact" className="py-20 bg-black text-white">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4 text-psyc-orange">Contact Us</h2>
+              <h2 className="text-4xl font-bold mb-4" style={{ 
+                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Contact Us</h2>
               <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
                 Ready to discuss your aerospace and defence technology requirements? Get in touch with our team of experts.
@@ -1103,7 +1591,12 @@ const PortfolioHome = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Left Column - Contact Information */}
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Get in Touch</h3>
+                <h3 className="text-2xl font-bold mb-6" style={{ 
+                  background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>Get in Touch</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -1377,7 +1870,12 @@ const PortfolioHome = () => {
                 viewport={{ once: true }}
                 className="col-span-1"
               >
-                <h3 className="font-bold text-lg mb-4 text-gradient">
+                <h3 className="font-bold text-lg mb-4" style={{ 
+                  background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>
                   Contact & Location
                 </h3>
                 <div className="space-y-4 text-white/70 text-sm">
