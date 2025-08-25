@@ -355,15 +355,13 @@ const PortfolioHome = () => {
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Circuit board/chip icon */}
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
-                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
-                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
-                    <line x1="11" y1="7" x2="11" y2="17" strokeWidth="2"/>
-                    <circle cx="7" cy="7" r="1" strokeWidth="2"/>
-                    <circle cx="17" cy="7" r="1" strokeWidth="2"/>
-                    <circle cx="7" cy="17" r="1" strokeWidth="2"/>
-                    <circle cx="17" cy="17" r="1" strokeWidth="2"/>
+                    {/* Brain/Network icon */}
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2" strokeWidth="2"/>
+                    <line x1="9" y1="9" x2="9.01" y2="9" strokeWidth="2"/>
+                    <line x1="15" y1="9" x2="15.01" y2="9" strokeWidth="2"/>
+                    <path d="M7 8c0 0 1-1 5-1s5 1 5 1" strokeWidth="2"/>
+                    <path d="M7 16c0 0 1 1 5 1s5-1 5-1" strokeWidth="2"/>
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">AI-First Payload Systems</h3>
@@ -383,9 +381,9 @@ const PortfolioHome = () => {
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Camera icon */}
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
-                    <circle cx="12" cy="12" r="4" strokeWidth="2"/>
-                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" strokeWidth="2"/>
+                    <circle cx="12" cy="13" r="4" strokeWidth="2"/>
+                    <path d="M12 9v.01" strokeWidth="2"/>
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Computer Vision Technology</h3>
@@ -428,8 +426,9 @@ const PortfolioHome = () => {
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Shield icon */}
-                    <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" strokeWidth="2"/>
-                    <path d="M12 9l-3 3 3 3 3-3-3-3z" strokeWidth="2"/>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeWidth="2"/>
+                    <path d="M12 8v8" strokeWidth="2"/>
+                    <path d="M8 12h8" strokeWidth="2"/>
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Defence-Grade Security</h3>
@@ -448,11 +447,12 @@ const PortfolioHome = () => {
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Target/radar with curved line icon */}
+                    {/* Radar/Target icon */}
                     <circle cx="12" cy="12" r="10" strokeWidth="2"/>
                     <circle cx="12" cy="12" r="6" strokeWidth="2"/>
                     <circle cx="12" cy="12" r="2" strokeWidth="2"/>
-                    <path d="M12 2a10 10 0 0 1 0 20" strokeWidth="2"/>
+                    <path d="M12 2v20" strokeWidth="2"/>
+                    <path d="M2 12h20" strokeWidth="2"/>
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Sensor Integration</h3>
@@ -471,10 +471,15 @@ const PortfolioHome = () => {
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Square with inner square and dot icon */}
+                    {/* Circuit board/Chip icon */}
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
                     <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
-                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
+                    <line x1="11" y1="7" x2="11" y2="17" strokeWidth="2"/>
+                    <circle cx="7" cy="7" r="1" strokeWidth="2"/>
+                    <circle cx="17" cy="7" r="1" strokeWidth="2"/>
+                    <circle cx="7" cy="17" r="1" strokeWidth="2"/>
+                    <circle cx="17" cy="17" r="1" strokeWidth="2"/>
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Edge Computing</h3>
