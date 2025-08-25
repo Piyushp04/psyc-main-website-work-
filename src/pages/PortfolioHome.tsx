@@ -83,8 +83,47 @@ const PortfolioHome = () => {
         </header>
 
         {/* Hero Section - Main PSYC Homepage */}
-        <section id="hero" className="py-20 text-center">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section id="hero" className="py-20 text-center relative overflow-hidden">
+          {/* Background Elements - Matching Main Website */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(30)].map((_, i) => (
+              <div
+                key={`particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 4}px`,
+                  height: `${2 + Math.random() * 4}px`,
+                  background: `radial-gradient(circle, rgba(255, 140, 0, ${0.6 + Math.random() * 0.4}) 0%, rgba(255, 183, 77, ${0.3 + Math.random() * 0.3}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 15}s`,
+                  animationDuration: `${12 + Math.random() * 8}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 10px rgba(255, 140, 0, 0.4)'
+                }}
+              />
+            ))}
+            
+            {/* Glowing connection lines */}
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={`line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/20 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${50 + Math.random() * 100}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 6}s`,
+                  animationDuration: `${6 + Math.random() * 4}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -138,11 +177,50 @@ const PortfolioHome = () => {
         </section>
 
         {/* Features Section */}
-        <section id="rd" className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <section id="rd" className="py-20 bg-black text-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 z-0">
+            {/* Glowing particles */}
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={`feature-particle-${i}`}
+                className="absolute rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  width: `${2 + Math.random() * 3}px`,
+                  height: `${2 + Math.random() * 3}px`,
+                  background: `radial-gradient(circle, rgba(255, 140, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 183, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
+                  animationDelay: `${Math.random() * 10}s`,
+                  animationDuration: `${8 + Math.random() * 6}s`,
+                  filter: 'blur(0.5px)',
+                  boxShadow: '0 0 8px rgba(255, 140, 0, 0.3)'
+                }}
+              />
+            ))}
+            
+            {/* Subtle connection lines */}
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={`feature-line-${i}`}
+                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
+                style={{
+                  left: `${Math.random() * 80 + 10}%`,
+                  top: `${Math.random() * 80 + 10}%`,
+                  width: `${40 + Math.random() * 80}px`,
+                  height: '1px',
+                  transform: `rotate(${Math.random() * 360}deg)`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${4 + Math.random() * 3}s`
+                }}
+              />
+            ))}
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* AI-First Systems */}
-              <div className="text-center">
+              <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Circuit board/chip icon */}
@@ -161,7 +239,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Computer Vision */}
-              <div className="text-center">
+              <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Eye icon */}
@@ -175,7 +253,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Universal Integration */}
-              <div className="text-center">
+              <div className="text-center hover:scale-105 transition-all duration-300 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {/* Lightning bolt icon */}
@@ -220,7 +298,7 @@ const PortfolioHome = () => {
 
               {/* Right Column - Feature Cards */}
               <div className="space-y-6">
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md">
+                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Target icon */}
@@ -233,7 +311,7 @@ const PortfolioHome = () => {
                   <p className="text-white/80">Every system we develop is engineered with military-grade precision and reliability standards.</p>
                 </div>
 
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md">
+                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Lightning bolt icon */}
@@ -244,7 +322,7 @@ const PortfolioHome = () => {
                   <p className="text-white/80">Continuous R&D ensures our solutions stay ahead of evolving aerospace challenges.</p>
                 </div>
 
-                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md">
+                <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Globe icon */}
@@ -996,6 +1074,11 @@ const PortfolioHome = () => {
                     className="h-16 w-auto"
                   />
                 </div>
+                <div className="space-y-2">
+                  <p className="text-white/80 text-sm leading-relaxed max-w-xs">
+                    Aerospace and Defence Industries
+                  </p>
+                </div>
 
               </motion.div>
 
@@ -1211,12 +1294,6 @@ const PortfolioHome = () => {
               className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center"
             >
               <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-                <Link 
-                  to="/" 
-                  className="text-psyc-orange hover:text-amber-400 transition-colors text-sm font-medium"
-                >
-                  ← Back to Main Menu
-                </Link>
                 <p className="text-white/50 text-sm">
                   &copy; {new Date().getFullYear()} PSYC Aerospace and Defence Industries Pvt. Ltd. All rights reserved.
                 </p>

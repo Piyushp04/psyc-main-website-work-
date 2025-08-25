@@ -63,9 +63,11 @@ const Footer = () => {
                 className="h-16 w-auto"
               />
             </div>
-            <p className="text-white/80 text-sm leading-relaxed max-w-xs">
-              Revolutionizing Surveillance control with precision drone technology
-            </p>
+            <div className="space-y-2">
+              <p className="text-white/80 text-sm leading-relaxed max-w-xs">
+                Aerospace and Defence Industries
+              </p>
+            </div>
 
           </motion.div>
 
@@ -197,12 +199,6 @@ const Footer = () => {
           className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-            <Link 
-              to="/" 
-              className="text-psyc-orange hover:text-amber-400 transition-colors text-sm font-medium"
-            >
-              ← Back to Main Menu
-            </Link>
             <p className="text-white/50 text-sm">
               &copy; {new Date().getFullYear()} PSYC Aerospace and Defence Industries Pvt. Ltd. All rights reserved.
             </p>

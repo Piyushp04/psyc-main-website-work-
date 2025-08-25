@@ -59,37 +59,32 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('hero')} className="text-white/90 hover:text-white transition-colors">
-              About
-            </button>
-            <button onClick={() => scrollToSection('problem-solution')} className="text-white/90 hover:text-white transition-colors">
-              Solutions
-            </button>
-            <button onClick={() => scrollToSection('features')} className="text-white/90 hover:text-white transition-colors">
-              Features
-            </button>
-            <button onClick={() => scrollToSection('demo')} className="text-white/90 hover:text-white transition-colors">
-              Drone Demo
-            </button>
-            <button onClick={() => scrollToSection('testimonials')} className="text-white/90 hover:text-white transition-colors">
-              Reactions
-            </button>
-            <Link 
-              to="/psyc-defence/blogs" 
-              className="text-white/90 hover:text-white transition-all duration-300 hover:scale-105 hover:text-psyc-orange hover:translate-y-[-2px] active:translate-y-[2px] active:animate-bounce"
-            >
-              Magnanimity
-            </Link>
-          </nav>
-
-          <div className="hidden md:flex items-center space-x-4">
-            <Link to="/">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                ← Back to Main Menu
-              </Button>
-            </Link>
+          {/* Desktop Menu - Moved to Right Side */}
+          <div className="hidden md:flex items-center space-x-6">
+            <nav className="flex items-center space-x-6">
+              <button onClick={() => scrollToSection('hero')} className="text-white/90 hover:text-white transition-colors">
+                About
+              </button>
+              <button onClick={() => scrollToSection('problem-solution')} className="text-white/90 hover:text-white transition-colors">
+                Solutions
+              </button>
+              <button onClick={() => scrollToSection('features')} className="text-white/90 hover:text-white transition-colors">
+                Features
+              </button>
+              <button onClick={() => scrollToSection('demo')} className="text-white/90 hover:text-white transition-colors">
+                Drone Demo
+              </button>
+              <button onClick={() => scrollToSection('testimonials')} className="text-white/90 hover:text-white transition-colors">
+                Reactions
+              </button>
+              <Link 
+                to="/psyc-defence/blogs" 
+                className="text-white/90 hover:text-white transition-all duration-300 hover:scale-105 hover:text-psyc-orange hover:translate-y-[-2px] active:translate-y-[2px] active:animate-bounce"
+              >
+                Magnanimity
+              </Link>
+            </nav>
+            
             <Button 
               onClick={() => scrollToSection('contact')}
               className="bg-psyc-orange hover:bg-psyc-orange/90 text-white"
@@ -152,11 +147,6 @@ const Navbar = () => {
               Magnanimity
             </Link>
             <div className="pt-2 space-y-2">
-              <Link to="/" className="block">
-                <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10">
-                  ← Back to Main Menu
-                </Button>
-              </Link>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="w-full bg-psyc-orange hover:bg-psyc-orange/90 text-white"
