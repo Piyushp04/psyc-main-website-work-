@@ -60,13 +60,12 @@ export default {
 					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
 					accent: 'hsl(var(--sidebar-accent))',
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// PSYC Custom Colors
+				// PSYC Custom Colors - Matching Main Website
 				psyc: {
 					green: '#4C8C3C',
-					orange: '#FF6F00',
+					orange: '#FF6600',
 					gold: '#FFB74D',
 					brown: '#8B5A2B',
 					beige: '#F5F5DC',

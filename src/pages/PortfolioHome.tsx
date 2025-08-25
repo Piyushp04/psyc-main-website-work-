@@ -144,7 +144,17 @@ const PortfolioHome = () => {
               {/* AI-First Systems */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-white rounded"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Circuit board/chip icon */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
+                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
+                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
+                    <line x1="11" y1="7" x2="11" y2="17" strokeWidth="2"/>
+                    <circle cx="7" cy="7" r="1" strokeWidth="2"/>
+                    <circle cx="17" cy="7" r="1" strokeWidth="2"/>
+                    <circle cx="7" cy="17" r="1" strokeWidth="2"/>
+                    <circle cx="17" cy="17" r="1" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-psyc-orange">AI-First Systems</h3>
                 <p className="text-white/80">Advanced AI-powered payload systems designed for next-generation applications</p>
@@ -153,7 +163,12 @@ const PortfolioHome = () => {
               {/* Computer Vision */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Eye icon */}
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
+                    <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" strokeWidth="2"/>
+                    <path d="M12 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-psyc-orange">Computer Vision</h3>
                 <p className="text-white/80">Cutting-edge computer vision technologies for enhanced automation</p>
@@ -162,7 +177,10 @@ const PortfolioHome = () => {
               {/* Universal Integration */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Lightning bolt icon */}
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-psyc-orange">Universal Integration</h3>
                 <p className="text-white/80">Compatible with Ardupilot, DJI, and wide range of drone ecosystems</p>
@@ -204,7 +222,12 @@ const PortfolioHome = () => {
               <div className="space-y-6">
                 <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md">
                   <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Target icon */}
+                      <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                      <circle cx="12" cy="12" r="6" strokeWidth="2"/>
+                      <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                    </svg>
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-psyc-orange">Precision Focus</h4>
                   <p className="text-white/80">Every system we develop is engineered with military-grade precision and reliability standards.</p>
@@ -212,7 +235,10 @@ const PortfolioHome = () => {
 
                 <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md">
                   <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
-                    <div className="w-6 h-6 bg-white transform rotate-45"></div>
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Lightning bolt icon */}
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                    </svg>
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-psyc-orange">Innovation Drive</h4>
                   <p className="text-white/80">Continuous R&D ensures our solutions stay ahead of evolving aerospace challenges.</p>
@@ -220,7 +246,12 @@ const PortfolioHome = () => {
 
                 <div className="bg-psyc-darkest border border-psyc-orange/30 p-6 rounded-lg shadow-md">
                   <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center mb-4">
-                    <div className="w-6 h-6 bg-white rounded"></div>
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Globe icon */}
+                      <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                      <line x1="2" y1="12" x2="22" y2="12" strokeWidth="2"/>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" strokeWidth="2"/>
+                    </svg>
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-psyc-orange">Global Integration</h4>
                   <p className="text-white/80">Our systems integrate seamlessly with both open-source platforms like Ardupilot and proprietary systems like DJI, ensuring maximum compatibility and deployment flexibility.</p>
@@ -243,9 +274,19 @@ const PortfolioHome = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* AI-First Payload Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Circuit board/chip icon */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
+                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
+                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
+                    <line x1="11" y1="7" x2="11" y2="17" strokeWidth="2"/>
+                    <circle cx="7" cy="7" r="1" strokeWidth="2"/>
+                    <circle cx="17" cy="7" r="1" strokeWidth="2"/>
+                    <circle cx="7" cy="17" r="1" strokeWidth="2"/>
+                    <circle cx="17" cy="17" r="1" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">AI-First Payload Systems</h3>
                 <p className="text-white/80 mb-6">
@@ -260,9 +301,14 @@ const PortfolioHome = () => {
               </div>
 
               {/* Computer Vision Technology */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Camera icon */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="4" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Computer Vision Technology</h3>
                 <p className="text-white/80 mb-6">
@@ -277,9 +323,15 @@ const PortfolioHome = () => {
               </div>
 
               {/* Automation Frameworks */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Gear icon */}
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
+                    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" strokeWidth="2"/>
+                    <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" strokeWidth="2"/>
+                    <path d="M12 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Automation Frameworks</h3>
                 <p className="text-white/80 mb-6">
@@ -294,9 +346,13 @@ const PortfolioHome = () => {
               </div>
 
               {/* Defence-Grade Security */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Shield icon */}
+                    <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" strokeWidth="2"/>
+                    <path d="M12 9l-3 3 3 3 3-3-3-3z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Defence-Grade Security</h3>
                 <p className="text-white/80 mb-6">
@@ -311,9 +367,15 @@ const PortfolioHome = () => {
               </div>
 
               {/* Sensor Integration */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Target/radar with curved line icon */}
+                    <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="6" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                    <path d="M12 2a10 10 0 0 1 0 20" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Sensor Integration</h3>
                 <p className="text-white/80 mb-6">
@@ -328,9 +390,14 @@ const PortfolioHome = () => {
               </div>
 
               {/* Edge Computing */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Square with inner square and dot icon */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
+                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Edge Computing</h3>
                 <p className="text-white/80 mb-6">
@@ -350,7 +417,7 @@ const PortfolioHome = () => {
                   <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <div className="w-8 h-8 bg-white rounded"></div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-psyc-orange group-hover:text-white transition-colors duration-300">Darting Tariort</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-psyc-orange group-hover:text-white transition-colors duration-300">Darting Turret</h3>
                   <p className="text-white/80 mb-6">
                     Description for this capability will be added here.
                   </p>
@@ -367,7 +434,7 @@ const PortfolioHome = () => {
               </Link>
 
               {/* Empty Box 2 */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <div className="w-8 h-8 bg-white rounded-full"></div>
                 </div>
@@ -384,7 +451,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Empty Box 3 */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
+              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg hover:border-psyc-orange/60 hover:shadow-psyc-orange/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
                   <div className="w-8 h-8 bg-white transform rotate-45"></div>
                 </div>
@@ -440,7 +507,10 @@ const PortfolioHome = () => {
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
                 <div className="flex items-center mb-6">
                   <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
-                    <div className="w-4 h-4 bg-white transform rotate-45"></div>
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Lightning bolt icon */}
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                    </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-psyc-orange">Open Source Platforms</h3>
                 </div>
@@ -480,7 +550,10 @@ const PortfolioHome = () => {
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
                 <div className="flex items-center mb-6">
                   <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
-                    <div className="w-4 h-4 bg-white transform rotate-45"></div>
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Lightning bolt icon */}
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                    </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-psyc-orange">Commercial Systems</h3>
                 </div>
@@ -520,7 +593,10 @@ const PortfolioHome = () => {
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
                 <div className="flex items-center mb-6">
                   <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
-                    <div className="w-4 h-4 bg-white transform rotate-45"></div>
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Lightning bolt icon */}
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                    </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-psyc-orange">Drone Segments</h3>
                 </div>
@@ -627,7 +703,12 @@ const PortfolioHome = () => {
               {/* Advanced Payload Systems */}
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Square with line icon */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
+                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
+                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <div className="mb-4">
                   <span className="bg-psyc-orange text-white px-3 py-1 rounded-full text-sm">Active Development</span>
@@ -654,7 +735,10 @@ const PortfolioHome = () => {
               {/* AI Vision Technology */}
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Lightbulb icon */}
+                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <div className="mb-4">
                   <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Beta Testing</span>
@@ -681,7 +765,11 @@ const PortfolioHome = () => {
               {/* Automation Operating Systems */}
               <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
                 <div className="w-16 h-16 bg-psyc-orange rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Gear icon */}
+                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" strokeWidth="2"/>
+                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <div className="mb-4">
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Production Ready</span>
@@ -719,7 +807,12 @@ const PortfolioHome = () => {
               {/* Precision Targeting */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Target icon - concentric circles with center dot */}
+                    <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="6" strokeWidth="2"/>
+                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-psyc-orange">Precision Targeting</h3>
                 <p className="text-white/80">Advanced algorithms for high-precision target acquisition and tracking</p>
@@ -728,7 +821,11 @@ const PortfolioHome = () => {
               {/* Performance Analytics */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Line graph trending upwards icon */}
+                    <path d="M3 18L9 12L13 16L21 8" strokeWidth="2"/>
+                    <path d="M21 8v6h-6" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-psyc-orange">Performance Analytics</h3>
                 <p className="text-white/80">Real-time performance monitoring and optimization systems</p>
@@ -737,7 +834,10 @@ const PortfolioHome = () => {
               {/* Energy Management */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-8 h-8 bg-white transform rotate-45"></div>
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Lightning bolt icon */}
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+                  </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-psyc-orange">Energy Management</h3>
                 <p className="text-white/80">Intelligent power distribution and consumption optimization</p>
@@ -785,7 +885,10 @@ const PortfolioHome = () => {
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-white rounded"></div>
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {/* Envelope icon with rounded top */}
+                        <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeWidth="2"/>
+                      </svg>
                     </div>
                     <div>
                       <p className="font-bold text-psyc-orange">Email</p>
@@ -796,7 +899,10 @@ const PortfolioHome = () => {
 
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-white rounded-full"></div>
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {/* Phone receiver icon */}
+                        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" strokeWidth="2"/>
+                      </svg>
                     </div>
                     <div>
                       <p className="font-bold text-psyc-orange">Phone</p>
@@ -805,29 +911,7 @@ const PortfolioHome = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-psyc-orange rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-white transform rotate-45"></div>
-                    </div>
-                    <div>
-                      <p className="font-bold text-psyc-orange">Address</p>
-                      <div className="text-white/80">
-                        <p className="font-bold">Registered Office:</p>
-                        <p>C/O T N VISHUKUMAR</p>
-                        <p>Lingadahalli Main Road</p>
-                        <p>Tarikere, Chickmagalur</p>
-                        <p>Karnataka - 577228</p>
-                      </div>
-                      <div className="text-white/80 mt-2">
-                        <p className="font-bold">Incubated at:</p>
-                        <p>AIC-DSU Foundation</p>
-                        <p>VJPR+WGG, Service Rd</p>
-                        <p>Kudlu Main Rd, Srinivasa Nagar</p>
-                        <p>Hal Layout, Singasandra</p>
-                        <p>Bengaluru, Karnataka - 560068</p>
-                      </div>
-                    </div>
-                  </div>
+
                 </div>
               </div>
 
@@ -912,9 +996,7 @@ const PortfolioHome = () => {
                     className="h-16 w-auto"
                   />
                 </div>
-                <p className="text-white/80 text-sm leading-relaxed max-w-xs">
-                  Revolutionizing Surveillance control with precision drone technology
-                </p>
+
               </motion.div>
 
               {/* Social links */}
