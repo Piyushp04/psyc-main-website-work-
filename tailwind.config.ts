@@ -65,7 +65,7 @@ export default {
 				// PSYC Custom Colors - Matching Main Website
 				psyc: {
 					green: '#4C8C3C',
-					orange: '#FF8C00',
+					orange: '#FFA500',
 					gold: '#FFB74D',
 					brown: '#8B5A2B',
 					beige: '#F5F5DC',
