@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThreeDBackground from "@/components/ThreeDBackground";
+import VideoCard from "@/components/VideoCard";
+import { gaurVideos, conferencesVideos, gaurAIVideos } from "@/data/videoData";
 
 const GaurPage = () => {
   return (
@@ -14,11 +16,11 @@ const GaurPage = () => {
         <section className="py-20 text-center">
           <div className="container mx-auto px-4 md:px-8">
             <div className="text-6xl mb-6"></div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-psyc-orange">
-              Gaur
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gradient">
+              Human-Gaur Conflict Documentation
             </h1>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Discover the largest bovine species through our exclusive gaur video collection
+              Comprehensive documentation of human-gaur conflicts worldwide and the evolving solutions to address this critical conservation challenge
             </p>
           </div>
         </section>
@@ -30,110 +32,51 @@ const GaurPage = () => {
               The Problem: India
             </h2>
             
-            {/* Karnataka */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Karnataka</h3>
+            {/* Maharashtra */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">Maharashtra</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Karnataka - Case 1</h4>
-                  <p className="text-white/60">Karnataka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Karnataka - Case 2</h4>
-                  <p className="text-white/60">Karnataka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Karnataka - Case 3</h4>
-                  <p className="text-white/60">Karnataka</p>
-                </div>
+                {gaurVideos.india.maharashtra.map((video, index) => (
+                  <VideoCard
+                    key={`maharashtra-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Maharashtra"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
 
             {/* Kerala */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Kerala</h3>
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">Kerala</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Kerala - Case 1</h4>
-                  <p className="text-white/60">Kerala</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Kerala - Case 2</h4>
-                  <p className="text-white/60">Kerala</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Kerala - Case 3</h4>
-                  <p className="text-white/60">Kerala</p>
-                </div>
+                {gaurVideos.india.kerala.map((video, index) => (
+                  <VideoCard
+                    key={`kerala-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Kerala"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
 
-            {/* Assam */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Assam</h3>
+            {/* Karnataka */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">Karnataka</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Assam - Case 1</h4>
-                  <p className="text-white/60">Assam</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Assam - Case 2</h4>
-                  <p className="text-white/60">Assam</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Maharashtra */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Maharashtra</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Maharashtra - Case 1</h4>
-                  <p className="text-white/60">Maharashtra</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Maharashtra - Case 2</h4>
-                  <p className="text-white/60">Maharashtra</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Maharashtra - Case 3</h4>
-                  <p className="text-white/60">Maharashtra</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Madhya Pradesh */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Madhya Pradesh</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Madhya Pradesh - Case 1</h4>
-                  <p className="text-white/60">Madhya Pradesh</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Madhya Pradesh - Case 2</h4>
-                  <p className="text-white/60">Madhya Pradesh</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Odisha */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Odisha</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Odisha - Case 1</h4>
-                  <p className="text-white/60">Odisha</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Odisha - Case 2</h4>
-                  <p className="text-white/60">Odisha</p>
-                  <p className="text-red-400 text-sm mt-2">Video Not Available</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Odisha - Case 3</h4>
-                  <p className="text-white/60">Odisha</p>
-                </div>
+                {gaurVideos.india.karnataka.map((video, index) => (
+                  <VideoCard
+                    key={`karnataka-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Karnataka"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -145,100 +88,96 @@ const GaurPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
               The Problem: International
             </h2>
-            
-            {/* China */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">China</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in China</h4>
-                  <p className="text-white/60">China</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in China - Case 2</h4>
-                  <p className="text-white/60">China</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in China - Case 3</h4>
-                  <p className="text-white/60">China</p>
-                </div>
-              </div>
-            </div>
 
             {/* Sri Lanka */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Sri Lanka</h3>
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">Sri Lanka</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Sri Lanka - Case 1</h4>
-                  <p className="text-white/60">Sri Lanka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Sri Lanka - Case 2</h4>
-                  <p className="text-white/60">Sri Lanka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Sri Lanka - Case 3</h4>
-                  <p className="text-white/60">Sri Lanka</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Thailand */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Thailand</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Thailand - Case 1</h4>
-                  <p className="text-white/60">Thailand</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Thailand - Case 2</h4>
-                  <p className="text-white/60">Thailand</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Thailand - Case 3</h4>
-                  <p className="text-white/60">Thailand</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Africa */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Africa</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Africa</h4>
-                  <p className="text-white/60">Africa</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Gaur Conflicts in Zimbabwe</h4>
-                  <p className="text-white/60">Africa</p>
-                </div>
+                {gaurVideos.sriLanka.map((video, index) => (
+                  <VideoCard
+                    key={`sriLanka-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Sri Lanka"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Current Solutions & Innovations */}
+        {/* Gaur Solutions Section */}
         <section className="py-16">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Current Solutions & Innovations
+              Current Solutions & Innovations for Gaur
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                <h4 className="text-lg font-semibold mb-2">Gaur-Wildlife Conflicts Management in India</h4>
-                <p className="text-white/60">Solutions</p>
-              </div>
-              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                <h4 className="text-lg font-semibold mb-2">Wildlife Conflict Solutions - India</h4>
-                <p className="text-white/60">Solutions</p>
-              </div>
-              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                <h4 className="text-lg font-semibold mb-2">Gaur-Wildlife Conflicts in Africa - Solutions</h4>
-                <p className="text-white/60">Solutions</p>
+              <VideoCard
+                key="gaur-solution-1"
+                videoId="6_Wbz7nwKUI"
+                title="Gaur Conflict Resolution - Case 1"
+                region="Solutions"
+                isAvailable={true}
+              />
+              <VideoCard
+                key="gaur-solution-2"
+                videoId="rj7lh97z7JM"
+                title="Gaur Conflict Resolution - Case 2"
+                region="Solutions"
+                isAvailable={true}
+              />
+              <VideoCard
+                key="gaur-solution-3"
+                videoId="2kgtRq6Z9eI"
+                title="Gaur Conflict Resolution - Case 3"
+                region="Solutions"
+                isAvailable={true}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Industry Conferences & Discussions Section */}
+        <section className="py-16 bg-black/20">
+          <div className="container mx-auto px-4 md:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: '#fbbf24' }}>
+              Industry Conferences & Discussions
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {conferencesVideos.map((video, index) => (
+                <VideoCard
+                  key={`conference-${index}`}
+                  videoId={video.url.replace('https://youtu.be/', '').replace('https://www.youtube.com/live/', '').replace('https://www.youtube.com/watch?v=', '')}
+                  title={video.title}
+                  region="Conference"
+                  isAvailable={true}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Idea AI Movie Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 md:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: '#fbbf24' }}>
+              Our Idea AI Movie
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="w-full">
+                <video 
+                  controls
+                  muted
+                  className="w-full h-full rounded-lg shadow-lg"
+                >
+                  <source src="/videos/idea.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

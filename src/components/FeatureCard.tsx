@@ -48,13 +48,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4xKSIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjQgMiIvPjwvc3ZnPg==')] opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
       
       <div className="relative z-10 flex items-start space-x-4">
-        <div className="mt-1 p-3 bg-black/50 rounded-lg text-psyc-orange group-hover:text-white transition-colors duration-300 relative overflow-hidden">
+        <div className="mt-1 p-3 bg-black rounded-lg text-psyc-orange group-hover:text-white transition-colors duration-300 relative overflow-hidden">
           {icon}
-          {/* Glow effect on icon */}
-          <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </div>
         <div className="feature-card-content flex-1">
-          <h3 className="text-xl font-bold mb-2 group-hover:text-psyc-orange transition-colors duration-300">
+          <h3 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-300">
             {title}
           </h3>
           <p className="text-white/80">{description}</p>

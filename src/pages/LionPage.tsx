@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThreeDBackground from "@/components/ThreeDBackground";
 import VideoCard from "@/components/VideoCard";
-import { problemVideos, africaVideos, solutionsVideos } from "@/data/videoData";
+import { lionVideos, conferencesVideos, lionAIVideos } from "@/data/videoData";
 
 const LionPage = () => {
   return (
@@ -16,229 +16,168 @@ const LionPage = () => {
         <section className="py-20 text-center">
           <div className="container mx-auto px-4 md:px-8">
             <div className="text-6xl mb-6"></div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-psyc-orange">
-              Lion
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gradient">
+              Human-Lion Conflict Documentation
             </h1>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Explore the majestic world of lions through our curated collection of videos
+              Comprehensive documentation of human-lion conflicts worldwide and the evolving solutions to address this critical conservation challenge
             </p>
           </div>
         </section>
 
-        {/* The Problem: India */}
+        {/* The Problem: Africa */}
         <section className="py-16">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              The Problem: India
+              The Problem: Africa
             </h2>
             
-            {/* Karnataka */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Karnataka</h3>
+            {/* Kenya */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">Kenya</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Karnataka - Case 1</h4>
-                  <p className="text-white/60">Karnataka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Karnataka - Case 2</h4>
-                  <p className="text-white/60">Karnataka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Karnataka - Case 3</h4>
-                  <p className="text-white/60">Karnataka</p>
-                </div>
+                {lionVideos.africa.kenya.map((video, index) => (
+                  <VideoCard
+                    key={`kenya-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Kenya"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
 
-            {/* Kerala */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Kerala</h3>
+            {/* Tanzania */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">Tanzania</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Kerala - Case 1</h4>
-                  <p className="text-white/60">Kerala</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Kerala - Case 2</h4>
-                  <p className="text-white/60">Kerala</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Kerala - Case 3</h4>
-                  <p className="text-white/60">Kerala</p>
-                </div>
+                {lionVideos.africa.tanzania.map((video, index) => (
+                  <VideoCard
+                    key={`tanzania-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Tanzania"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
 
-            {/* Assam */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Assam</h3>
+            {/* South Africa */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">South Africa</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Assam - Case 1</h4>
-                  <p className="text-white/60">Assam</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Assam - Case 2</h4>
-                  <p className="text-white/60">Assam</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Maharashtra */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Maharashtra</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Maharashtra - Case 1</h4>
-                  <p className="text-white/60">Maharashtra</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Maharashtra - Case 2</h4>
-                  <p className="text-white/60">Maharashtra</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Maharashtra - Case 3</h4>
-                  <p className="text-white/60">Maharashtra</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Madhya Pradesh */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Madhya Pradesh</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Madhya Pradesh - Case 1</h4>
-                  <p className="text-white/60">Madhya Pradesh</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Madhya Pradesh - Case 2</h4>
-                  <p className="text-white/60">Madhya Pradesh</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Odisha */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Odisha</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Odisha - Case 1</h4>
-                  <p className="text-white/60">Odisha</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Odisha - Case 2</h4>
-                  <p className="text-white/60">Odisha</p>
-                  <p className="text-red-400 text-sm mt-2">Video Not Available</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Odisha - Case 3</h4>
-                  <p className="text-white/60">Odisha</p>
-                </div>
+                {lionVideos.africa.southAfrica.map((video, index) => (
+                  <VideoCard
+                    key={`southAfrica-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="South Africa"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* The Problem: International */}
+        {/* The Problem: Asia */}
         <section className="py-16 bg-black/20">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              The Problem: International
+              The Problem: Asia
             </h2>
-            
-            {/* China */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">China</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in China</h4>
-                  <p className="text-white/60">China</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in China - Case 2</h4>
-                  <p className="text-white/60">China</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in China - Case 3</h4>
-                  <p className="text-white/60">China</p>
-                </div>
-              </div>
-            </div>
 
-            {/* Sri Lanka */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Sri Lanka</h3>
+            {/* India - Gujarat */}
+            <div className="mb-8">
+              <h3 className="text-xl font-bold mb-4 text-psyc-orange/80">India - Gujarat</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Sri Lanka - Case 1</h4>
-                  <p className="text-white/60">Sri Lanka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Sri Lanka - Case 2</h4>
-                  <p className="text-white/60">Sri Lanka</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Sri Lanka - Case 3</h4>
-                  <p className="text-white/60">Sri Lanka</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Thailand */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Thailand</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Thailand - Case 1</h4>
-                  <p className="text-white/60">Thailand</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Thailand - Case 2</h4>
-                  <p className="text-white/60">Thailand</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Thailand - Case 3</h4>
-                  <p className="text-white/60">Thailand</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Africa */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-psyc-orange">Africa</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Africa</h4>
-                  <p className="text-white/60">Africa</p>
-                </div>
-                <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                  <h4 className="text-lg font-semibold mb-2">Human-Lion Conflicts in Zimbabwe</h4>
-                  <p className="text-white/60">Africa</p>
-                </div>
+                {lionVideos.asia.india.gujarat.map((video, index) => (
+                  <VideoCard
+                    key={`gujarat-${index}`}
+                    videoId={video.url.replace('https://www.youtube.com/watch?v=', '')}
+                    title={video.title}
+                    region="Gujarat"
+                    isAvailable={true}
+                  />
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Current Solutions & Innovations */}
+        {/* Lion Solutions Section */}
         <section className="py-16">
           <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-2xl font-bold mb-6 text-psyc-orange">Current Solutions & Innovations</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+              Current Solutions & Innovations for Lion
+            </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                <h4 className="text-lg font-semibold mb-2">Lion-Wildlife Conflicts Management in India</h4>
-                <p className="text-white/60">Solutions</p>
-              </div>
-              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                <h4 className="text-lg font-semibold mb-2">Wildlife Conflict Solutions - India</h4>
-                <p className="text-white/60">Solutions</p>
-              </div>
-              <div className="bg-black/20 p-6 rounded-lg border border-white/20">
-                <h4 className="text-lg font-semibold mb-2">Lion-Wildlife Conflicts in Africa - Solutions</h4>
-                <p className="text-white/60">Solutions</p>
+              <VideoCard
+                key="lion-solution-1"
+                videoId="L1QxQq7e6YM"
+                title="Lion Conflict Resolution - Case 1"
+                region="Solutions"
+                isAvailable={true}
+              />
+              <VideoCard
+                key="lion-solution-2"
+                videoId="D-pfgrR_dhE"
+                title="Lion Conflict Resolution - Case 2"
+                region="Solutions"
+                isAvailable={true}
+              />
+              <VideoCard
+                key="lion-solution-3"
+                videoId="4FuabkML9To"
+                title="Lion Conflict Resolution - Case 3"
+                region="Solutions"
+                isAvailable={true}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Industry Conferences & Discussions Section */}
+        <section className="py-16 bg-black/20">
+          <div className="container mx-auto px-4 md:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: '#fbbf24' }}>
+              Industry Conferences & Discussions
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {conferencesVideos.map((video, index) => (
+                <VideoCard
+                  key={`conference-${index}`}
+                  videoId={video.url.replace('https://youtu.be/', '').replace('https://www.youtube.com/live/', '').replace('https://www.youtube.com/watch?v=', '')}
+                  title={video.title}
+                  region="Conference"
+                  isAvailable={true}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Idea AI Movie Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 md:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: '#fbbf24' }}>
+              Our Idea AI Movie
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="w-full">
+                <video 
+                  controls
+                  muted
+                  className="w-full h-full rounded-lg shadow-lg"
+                >
+                  <source src="/videos/idea.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Building, MapPin } from 'lucide-react';
+import { ArrowRight, Building, MapPin, Bot, Camera, Zap, Monitor, Brain, Settings, Shield, Target, Package, BarChart3, Crosshair } from 'lucide-react';
 import ThreeDBackground from '@/components/ThreeDBackground';
 
 const PortfolioHome = () => {
@@ -52,14 +52,7 @@ const PortfolioHome = () => {
           ))}
         </div>
 
-        {/* Enhanced grid pattern with smooth parallax - matching main website */}
-        <div 
-          className="absolute inset-0 opacity-20 transition-transform duration-700 ease-out"
-          style={{
-            backgroundImage: 'linear-gradient(rgba(255, 107, 53, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 107, 53, 0.2) 1px, transparent 1px)',
-            backgroundSize: '60px 60px'
-          }}
-        />
+
         
         {/* Additional floating glow elements */}
         <div className="absolute inset-0">
@@ -319,88 +312,72 @@ const PortfolioHome = () => {
           <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             {/* Section Title */}
             <div className="text-center mb-16">
-                              <h2 className="text-4xl font-bold mb-6">
-                  <span style={{ 
-                    background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text'
-                  }}>Cutting-Edge Features</span>
-                </h2>
-              <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
-              <p className="text-lg text-white/80 max-w-2xl mx-auto">
-                Advanced technologies and innovative solutions that define the future of aerospace and defence systems.
-              </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* AI-First Systems */}
-              <div className="text-center hover:scale-105 transition-all duration-500 ease-out cursor-pointer group relative overflow-hidden bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Circuit board/chip icon */}
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
-                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
-                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
-                    <line x1="11" y1="7" x2="11" y2="17" strokeWidth="2"/>
-                    <circle cx="7" cy="7" r="1" strokeWidth="2"/>
-                    <circle cx="17" cy="7" r="1" strokeWidth="2"/>
-                    <circle cx="7" cy="17" r="1" strokeWidth="2"/>
-                    <circle cx="17" cy="17" r="1" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Monitor className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">AI-First Systems</h3>
-                <p className="text-white/80">Advanced AI-powered payload systems designed for next-generation applications</p>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">AI-First Payload Systems</h3>
+                <p className="text-white/80 mb-6">
+                  Advanced artificial intelligence algorithms optimized for real-time payload management and autonomous decision-making in critical aerospace operations.
+                </p>
               </div>
 
               {/* Computer Vision */}
-              <div className="text-center hover:scale-105 transition-all duration-500 ease-out cursor-pointer group relative overflow-hidden bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Eye icon */}
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
-                    <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" strokeWidth="2"/>
-                    <path d="M12 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Camera className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Computer Vision</h3>
-                <p className="text-white/80">Cutting-edge computer vision technologies for enhanced automation</p>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Computer Vision</h3>
+                <p className="text-white/80 mb-6">Cutting-edge computer vision technologies for enhanced automation</p>
               </div>
 
               {/* Universal Integration */}
-              <div className="text-center hover:scale-105 transition-all duration-500 ease-out cursor-pointer group relative overflow-hidden bg-psyc-darkest border border-orange-500/30 p-6 rounded-lg shadow-md hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Lightning bolt icon */}
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Zap className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Universal Integration</h3>
-                <p className="text-white/80">Compatible with Ardupilot, DJI, and wide range of drone ecosystems</p>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Universal Integration</h3>
+                <p className="text-white/80 mb-6">Compatible with Ardupilot, DJI, and wide range of drone ecosystems</p>
               </div>
             </div>
           </div>
@@ -488,17 +465,21 @@ const PortfolioHome = () => {
                   {/* Shimmer effect - matching main website */}
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                   
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjQpIiBzdHJva2Utd2lkdGg9IjEiLz48L3N2Zz4=')] opacity-40" />
+                  
+                  <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                     {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                    <svg className="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Target icon */}
+                    
+                    <svg className="w-6 h-6 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Target/Crosshair icon for Precision Focus */}
                       <circle cx="12" cy="12" r="10" strokeWidth="2"/>
                       <circle cx="12" cy="12" r="6" strokeWidth="2"/>
                       <circle cx="12" cy="12" r="2" strokeWidth="2"/>
                     </svg>
                   </div>
-                  <h4 className="text-xl font-bold mb-2 text-psyc-orange">Precision Focus</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-500">Precision Focus</h4>
                   <p className="text-white/80">Every system we develop is engineered with military-grade precision and reliability standards.</p>
                 </div>
 
@@ -509,15 +490,19 @@ const PortfolioHome = () => {
                   {/* Shimmer effect - matching main website */}
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                   
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjQpIiBzdHJva2Utd2lkdGg9IjEiLz48L3N2Zz4=')] opacity-40" />
+                  
+                  <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                     {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                    <svg className="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    
+                    <svg className="w-6 h-6 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {/* Lightning bolt icon */}
                       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
                     </svg>
                   </div>
-                  <h4 className="text-xl font-bold mb-2 text-psyc-orange">Innovation Drive</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-500">Innovation Drive</h4>
                   <p className="text-white/80">Continuous R&D ensures our solutions stay ahead of evolving aerospace challenges.</p>
                 </div>
 
@@ -528,17 +513,16 @@ const PortfolioHome = () => {
                   {/* Shimmer effect - matching main website */}
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                   
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjQpIiBzdHJva2Utd2lkdGg9IjEiLz48L3N2Zz4=')] opacity-40" />
+                  
+                  <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                     {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                    <svg className="w-6 h-6 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Globe icon */}
-                      <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                      <line x1="2" y1="12" x2="22" y2="12" strokeWidth="2"/>
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" strokeWidth="2"/>
-                    </svg>
+                    
+                    <Brain className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                   </div>
-                  <h4 className="text-xl font-bold mb-2 text-psyc-orange">Global Integration</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-500">Global Integration</h4>
                   <p className="text-white/80">Our systems integrate seamlessly with both open-source platforms like Ardupilot and proprietary systems like DJI, ensuring maximum compatibility and deployment flexibility.</p>
                 </div>
               </div>
@@ -610,20 +594,16 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Brain/Network icon */}
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
-                    <path d="M8 14s1.5 2 4 2 4-2 4-2" strokeWidth="2"/>
-                    <line x1="9" y1="9" x2="9.01" y2="9" strokeWidth="2"/>
-                    <line x1="15" y1="9" x2="15.01" y2="9" strokeWidth="2"/>
-                    <path d="M7 8c0 0 1-1 5-1s5 1 5 1" strokeWidth="2"/>
-                    <path d="M7 16c0 0 1 1 5 1s5-1 5-1" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Brain className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">AI-First Payload Systems</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">AI-First Payload Systems</h3>
                 <p className="text-white/80 mb-6">
                   Advanced artificial intelligence algorithms optimized for real-time payload management and autonomous decision-making in critical aerospace operations.
                 </p>
@@ -643,17 +623,16 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Camera icon */}
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" strokeWidth="2"/>
-                    <circle cx="12" cy="13" r="4" strokeWidth="2"/>
-                    <path d="M12 9v.01" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Camera className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Computer Vision Technology</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Computer Vision Technology</h3>
                 <p className="text-white/80 mb-6">
                   State-of-the-art computer vision systems providing enhanced situational awareness and object recognition capabilities for defence applications.
                 </p>
@@ -673,18 +652,16 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Gear icon */}
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeWidth="2"/>
-                    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" strokeWidth="2"/>
-                    <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" strokeWidth="2"/>
-                    <path d="M12 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Settings className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Automation Frameworks</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Automation Frameworks</h3>
                 <p className="text-white/80 mb-6">
                   Comprehensive automation solutions designed to reduce human intervention while maintaining operational precision and safety standards.
                 </p>
@@ -704,17 +681,16 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Shield icon */}
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeWidth="2"/>
-                    <path d="M12 8v8" strokeWidth="2"/>
-                    <path d="M8 12h8" strokeWidth="2"/>
-                  </svg>
+                  
+                  <Shield className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Defence-Grade Security</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Defence-Grade Security</h3>
                 <p className="text-white/80 mb-6">
                   Military-standard security protocols ensuring data integrity and operational security in sensitive aerospace and defence environments.
                 </p>
@@ -734,19 +710,16 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
-                  {/* Icon shimmer effect - left to right glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Radar/Target icon */}
-                    <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                    <circle cx="12" cy="12" r="6" strokeWidth="2"/>
-                    <circle cx="12" cy="12" r="2" strokeWidth="2"/>
-                    <path d="M12 2v20" strokeWidth="2"/>
-                    <path d="M2 12h20" strokeWidth="2"/>
-                  </svg>
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  
+                  <Target className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Sensor Integration</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Sensor Integration</h3>
                 <p className="text-white/80 mb-6">
                   Multi-sensor fusion capabilities enabling comprehensive environmental awareness and enhanced operational effectiveness.
                 </p>
@@ -766,22 +739,16 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
-                  {/* Icon shimmer effect - left to right glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Circuit board/Chip icon */}
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
-                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
-                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
-                    <line x1="11" y1="7" x2="11" y2="17" strokeWidth="2"/>
-                    <circle cx="7" cy="7" r="1" strokeWidth="2"/>
-                    <circle cx="17" cy="7" r="1" strokeWidth="2"/>
-                    <circle cx="7" cy="17" r="1" strokeWidth="2"/>
-                    <circle cx="17" cy="17" r="1" strokeWidth="2"/>
-                  </svg>
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  
+                  <Monitor className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Edge Computing</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Edge Computing</h3>
                 <p className="text-white/80 mb-6">
                   High-performance edge computing solutions for real-time processing and decision-making in bandwidth-constrained environments.
                 </p>
@@ -802,20 +769,25 @@ const PortfolioHome = () => {
                   {/* Shimmer effect - matching main website */}
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                   
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                  
+                  <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 relative overflow-hidden">
                     {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                    <div className="w-8 h-8 bg-white rounded relative z-10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                    
+                    {/* Darting Turret Icon */}
+                    <Crosshair className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-psyc-orange group-hover:text-white transition-colors duration-300">Darting Turret</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Darting Turret</h3>
                   <p className="text-white/80 mb-6">
-                    Description for this capability will be added here.
+                    Precision darting system with advanced targeting capabilities for safe wildlife management and tranquilization.
                   </p>
                   <ul className="space-y-2 text-white/80">
-                    <li>• Feature 1</li>
-                    <li>• Feature 2</li>
-                    <li>• Feature 3</li>
-                    <li>• Feature 4</li>
+                    <li>• High-precision targeting</li>
+                    <li>• Multiple dart types</li>
+                    <li>• Remote operation</li>
+                    <li>• Safety protocols</li>
                   </ul>
                   <div className="mt-4 text-psyc-orange text-sm font-medium group-hover:text-white transition-colors duration-300">
                     Click to explore →
@@ -823,7 +795,9 @@ const PortfolioHome = () => {
                 </div>
               </Link>
 
-              {/* Empty Box 2 */}
+
+
+              {/* AI Vision Technology */}
               <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
@@ -831,24 +805,31 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <div className="w-8 h-8 bg-white rounded-full relative z-10"></div>
+                  
+                  {/* Icon background - black by default */}
+                  <div className="absolute inset-2 bg-black rounded"></div>
+                  
+                  <Crosshair className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Capability 8</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">AI Vision Technology</h3>
                 <p className="text-white/80 mb-6">
-                  Description for this capability will be added here.
+                  Advanced computer vision and AI algorithms for real-time object detection, tracking, and intelligent decision-making in complex environments.
                 </p>
                 <ul className="space-y-2 text-white/80">
-                  <li>• Feature 1</li>
-                  <li>• Feature 2</li>
-                  <li>• Feature 3</li>
-                  <li>• Feature 4</li>
+                  <li>• Real-time detection</li>
+                  <li>• Object tracking</li>
+                  <li>• Pattern recognition</li>
+                  <li>• Autonomous decisions</li>
                 </ul>
               </div>
 
-              {/* Empty Box 3 */}
+              {/* Advanced Payload System */}
               <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
@@ -856,47 +837,31 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <div className="w-8 h-8 bg-white transform rotate-45 relative z-10"></div>
+                  
+                  <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Rocket/Launch icon for Advanced Payload System */}
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" strokeWidth="2"/>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" strokeWidth="2"/>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" strokeWidth="2"/>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" strokeWidth="2"/>
+                  </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Capability 9</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Advanced Payload System</h3>
                 <p className="text-white/80 mb-6">
-                  Description for this capability will be added here.
+                  Versatile payload delivery system supporting multiple mission types including medical supplies, monitoring equipment, and emergency response tools.
                 </p>
                 <ul className="space-y-2 text-white/80">
-                  <li>• Feature 1</li>
-                  <li>• Feature 2</li>
-                  <li>• Feature 3</li>
-                  <li>• Feature 4</li>
+                  <li>• Multi-purpose payloads</li>
+                  <li>• Precision delivery</li>
+                  <li>• Quick deployment</li>
+                  <li>• Mission flexibility</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Ready to Deploy Section */}
-        <section className="py-20 bg-black text-white">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <div className="text-center">
-              <h2 className="text-4xl font-bold mb-6" style={{ 
-                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text'
-              }}>Ready to Deploy</h2>
-              <div className="w-20 h-1 bg-psyc-orange mx-auto mb-6"></div>
-              <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-                All our systems are production-ready and designed for immediate integration into existing aerospace and defence infrastructure.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-psyc-orange text-white px-8 py-3 rounded-lg hover:bg-psyc-orange/90 transition-all duration-300 font-medium">
-                  Request Demo
-                </button>
-                <button className="bg-black border-2 border-psyc-orange text-psyc-orange px-8 py-3 rounded-lg hover:bg-psyc-orange hover:text-white transition-all duration-300 font-medium">
-                  Technical Specifications
-                </button>
               </div>
             </div>
           </div>
@@ -918,26 +883,32 @@ const PortfolioHome = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Open Source Platforms */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
-                <div className="flex items-center mb-6">
-                  <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Plug/Power icon */}
-                      <path d="M12 2v10" strokeWidth="2"/>
-                      <path d="M8 12v8" strokeWidth="2"/>
-                      <path d="M16 12v8" strokeWidth="2"/>
-                      <path d="M4 12h16" strokeWidth="2"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-psyc-orange">Open Source Platforms</h3>
-                </div>
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="bg-black/40 backdrop-blur-sm rounded-xl p-8 border border-psyc-orange/30 cyber-border relative overflow-hidden"
+            >
+              {/* Animated gradient background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-black/0 via-psyc-orange/5 to-black/0 z-0 animate-pulse opacity-50"></div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                {/* Open Source Platforms */}
                 <div className="space-y-4">
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <h3 className="text-2xl font-bold text-psyc-orange mb-6">Open Source Platforms</h3>
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -945,16 +916,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">ArduPilot</h4>
-                        <p className="text-sm text-white/80">Complete integration with ArduPilot autopilot systems</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">ArduPilot</h4>
+                        <p className="text-white/80">Complete integration with ArduPilot autopilot systems</p>
+                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Full Support</span>
                       </div>
                     </div>
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Full Support</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -962,16 +942,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">PX4</h4>
-                        <p className="text-sm text-white/80">Seamless compatibility with PX4 flight stack</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">PX4</h4>
+                        <p className="text-white/80">Seamless compatibility with PX4 flight stack</p>
+                        <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Compatible</span>
                       </div>
                     </div>
-                    <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Compatible</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -979,16 +968,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">OpenDroneID</h4>
-                        <p className="text-sm text-white/80">Remote ID compliance and integration</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">OpenDroneID</h4>
+                        <p className="text-white/80">Remote ID compliance and integration</p>
+                        <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Supported</span>
                       </div>
                     </div>
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Supported</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -996,34 +994,29 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">MAVLink</h4>
-                        <p className="text-sm text-white/80">Native MAVLink protocol implementation</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">MAVLink</h4>
+                        <p className="text-white/80">Native MAVLink protocol implementation</p>
+                        <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Native</span>
                       </div>
                     </div>
-                    <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Native</span>
                   </div>
                 </div>
-              </div>
 
-              {/* Commercial Systems */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
-                <div className="flex items-center mb-6">
-                  <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Plug/Power icon */}
-                      <path d="M12 2v10" strokeWidth="2"/>
-                      <path d="M8 12v8" strokeWidth="2"/>
-                      <path d="M16 12v8" strokeWidth="2"/>
-                      <path d="M4 12h16" strokeWidth="2"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-psyc-orange">Commercial Systems</h3>
-                </div>
+                {/* Commercial Systems */}
                 <div className="space-y-4">
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <h3 className="text-2xl font-bold text-psyc-orange mb-6">Commercial Systems</h3>
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1031,16 +1024,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">DJI SDK</h4>
-                        <p className="text-sm text-white/80">Official DJI integration certification</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">DJI SDK</h4>
+                        <p className="text-white/80">Official DJI integration certification</p>
+                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Certified</span>
                       </div>
                     </div>
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Certified</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1048,16 +1050,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Autel</h4>
-                        <p className="text-sm text-white/80">Integration with Autel enterprise platforms</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Autel</h4>
+                        <p className="text-white/80">Integration with Autel enterprise platforms</p>
+                        <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Compatible</span>
                       </div>
                     </div>
-                    <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Compatible</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1065,16 +1076,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Parrot</h4>
-                        <p className="text-sm text-white/80">Parrot ANAFI and professional series support</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Parrot</h4>
+                        <p className="text-white/80">Parrot ANAFI and professional series support</p>
+                        <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Supported</span>
                       </div>
                     </div>
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Supported</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1082,34 +1102,29 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Skydio</h4>
-                        <p className="text-sm text-white/80">AI-to-AI system integration capabilities</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Skydio</h4>
+                        <p className="text-white/80">AI-to-AI system integration capabilities</p>
+                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Integration</span>
                       </div>
                     </div>
-                    <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Integration</span>
                   </div>
                 </div>
-              </div>
 
-              {/* Drone Segments */}
-              <div className="bg-psyc-darkest border border-psyc-orange/30 p-8 rounded-lg shadow-lg">
-                <div className="flex items-center mb-6">
-                  <div className="w-8 h-8 bg-psyc-orange rounded-lg flex items-center justify-center mr-3">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {/* Plug/Power icon */}
-                      <path d="M12 2v10" strokeWidth="2"/>
-                      <path d="M8 12v8" strokeWidth="2"/>
-                      <path d="M16 12v8" strokeWidth="2"/>
-                      <path d="M4 12h16" strokeWidth="2"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-psyc-orange">Drone Segments</h3>
-                </div>
+                {/* Drone Segments */}
                 <div className="space-y-4">
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <h3 className="text-2xl font-bold text-psyc-orange mb-6">Drone Segments</h3>
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1117,16 +1132,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Fixed-Wing</h4>
-                        <p className="text-sm text-white/80">Long-range fixed-wing platform optimization</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Fixed-Wing</h4>
+                        <p className="text-white/80">Long-range fixed-wing platform optimization</p>
+                        <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Optimized</span>
                       </div>
                     </div>
-                    <span className="bg-green-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Optimized</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1134,16 +1158,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Multi-Rotor</h4>
-                        <p className="text-sm text-white/80">Multi-rotor precision and stability enhancement</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Multi-Rotor</h4>
+                        <p className="text-white/80">Versatile multi-rotor platform support</p>
+                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Full Support</span>
                       </div>
                     </div>
-                    <span className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Enhanced</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1151,16 +1184,25 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">VTOL</h4>
-                        <p className="text-sm text-white/80">Vertical takeoff and landing specialized systems</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Hybrid VTOL</h4>
+                        <p className="text-white/80">Advanced hybrid vertical takeoff and landing</p>
+                        <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Supported</span>
                       </div>
                     </div>
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Specialized</span>
                   </div>
-                  <div className="flex justify-between items-start p-4 rounded-lg hover:bg-psyc-darkest/50 hover:border-2 hover:border-psyc-orange hover:shadow-2xl hover:shadow-psyc-orange/40 transition-all duration-300 cursor-pointer group hover:scale-105">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-psyc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  
+                  <div className="bg-black/50 p-5 rounded-lg border border-white/10 hover:border-psyc-orange/30 transition-colors duration-300 hover:shadow-lg hover:shadow-psyc-orange/10 group relative overflow-hidden">
+                    {/* Enhanced Glow effect */}
+                    <div className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                    
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                    
+                    <div className="flex items-start relative z-10">
+                      <div className="bg-psyc-orange/20 p-3 rounded-lg mr-4 group-hover:bg-psyc-orange/30 transition-colors duration-300 relative overflow-hidden">
+                        {/* Icon glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-psyc-orange/0 via-psyc-orange/30 to-psyc-orange/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-psyc-orange relative z-10">
                           <path d="M12 2v10" strokeWidth="2"/>
                           <path d="M8 12v8" strokeWidth="2"/>
                           <path d="M16 12v8" strokeWidth="2"/>
@@ -1168,112 +1210,15 @@ const PortfolioHome = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-psyc-orange group-hover:text-white transition-colors duration-300">Heavy-Lift</h4>
-                        <p className="text-sm text-white/80">Heavy payload carrier optimization</p>
+                        <h4 className="font-bold mb-2 text-psyc-orange group-hover:text-amber-400 transition-colors duration-300">Custom Platforms</h4>
+                        <p className="text-white/80">Tailored solutions for specialized requirements</p>
+                        <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap mt-2 inline-block">Custom</span>
                       </div>
                     </div>
-                    <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm whitespace-nowrap">Designed</span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Integration Process Section */}
-        <section className="py-20 bg-black text-white relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute inset-0 z-0">
-            {/* Glowing particles */}
-            {[...Array(20)].map((_, i) => (
-              <div
-                key={`integration-particle-${i}`}
-                className="absolute rounded-full animate-pulse"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  width: `${2 + Math.random() * 3}px`,
-                  height: `${2 + Math.random() * 3}px`,
-                  background: `radial-gradient(circle, rgba(255, 111, 0, ${0.4 + Math.random() * 0.3}) 0%, rgba(255, 185, 77, ${0.2 + Math.random() * 0.2}) 70%, transparent 100%)`,
-                  animationDelay: `${Math.random() * 10}s`,
-                  animationDuration: `${8 + Math.random() * 6}s`,
-                  filter: 'blur(0.5px)',
-                  boxShadow: '0 0 8px rgba(255, 111, 0, 0.3)'
-                }}
-              />
-            ))}
-            
-            {/* Subtle connection lines */}
-            {[...Array(5)].map((_, i) => (
-              <div
-                key={`integration-line-${i}`}
-                className="absolute bg-gradient-to-r from-transparent via-psyc-orange/15 to-transparent animate-pulse"
-                style={{
-                  left: `${Math.random() * 80 + 10}%`,
-                  top: `${Math.random() * 80 + 10}%`,
-                  width: `${40 + Math.random() * 80}px`,
-                  height: '1px',
-                  transform: `rotate(${Math.random() * 360}deg)`,
-                  animationDelay: `${Math.random() * 5}s`,
-                  animationDuration: `${4 + Math.random() * 3}s`
-                }}
-              />
-            ))}
-          </div>
-          
-          <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-8" style={{ 
-                background: 'linear-gradient(135deg, #ff6b35 0%, #fbbf24 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text'
-              }}>Integration Process</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-              {/* Step 1: Assessment */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">1</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Assessment</h3>
-                <p className="text-white/80">Platform analysis and compatibility evaluation</p>
-              </div>
-
-              {/* Step 2: Configuration */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">2</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Configuration</h3>
-                <p className="text-white/80">Custom payload configuration and optimization</p>
-              </div>
-
-              {/* Step 3: Testing */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">3</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Testing</h3>
-                <p className="text-white/80">Comprehensive testing and validation protocols</p>
-              </div>
-
-              {/* Step 4: Deployment */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">4</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Deployment</h3>
-                <p className="text-white/80">Full deployment and ongoing support</p>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <button className="bg-psyc-orange text-white px-8 py-3 rounded-lg hover:bg-psyc-orange/90 transition-all duration-300 flex items-center gap-2 mx-auto">
-                Start Integration →
-              </button>
-            </div>
+            </motion.div>
           </div>
         </section>
 
@@ -1333,83 +1278,102 @@ const PortfolioHome = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Advanced Payload Systems */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
-                {/* Enhanced Glow effect - matching main website */}
-                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
-                
-                {/* Shimmer effect - matching main website */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
-                
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
-                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Square with line icon */}
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
-                    <rect x="7" y="7" width="10" height="10" strokeWidth="2"/>
-                    <line x1="7" y1="11" x2="17" y2="11" strokeWidth="2"/>
-                  </svg>
-                </div>
-                <div className="mb-4">
-                  <span className="bg-psyc-orange text-white px-3 py-1 rounded-full text-sm">Active Development</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Advanced Payload Systems</h3>
-                <p className="text-white/80 mb-6">
-                  Research into next-generation payload architectures for enhanced mission capabilities
-                </p>
-                <div className="mb-4">
-                  <p className="text-sm text-white/60 mb-2">Development Progress</p>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm text-white/80">85%</span>
+              {/* Advanced Payload Systems - Clickable to Main Website */}
+              <Link to="/psyc-defence#features" className="block">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                  
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                  
+                  <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    
+                    <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Rocket/Launch icon for Advanced Payload Systems */}
+                      <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" strokeWidth="2"/>
+                      <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" strokeWidth="2"/>
+                      <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" strokeWidth="2"/>
+                      <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" strokeWidth="2"/>
+                    </svg>
                   </div>
-                  <div className="w-full bg-white/20 rounded-full h-2">
-                    <div className="bg-psyc-orange h-2 rounded-full" style={{ width: '85%' }}></div>
+                  <div className="mb-4">
+                    <span className="bg-psyc-orange text-white px-3 py-1 rounded-full text-sm">Active Development</span>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Advanced Payload Systems</h3>
+                  <p className="text-white/80 mb-6">
+                    Research into next-generation payload architectures for enhanced mission capabilities
+                  </p>
+                  <div className="mb-4">
+                    <p className="text-sm text-white/60 mb-2">Development Progress</p>
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm text-white/80">85%</span>
+                    </div>
+                    <div className="w-full bg-white/20 rounded-full h-2">
+                      <div className="bg-psyc-orange h-2 rounded-full" style={{ width: '85%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-psyc-orange mb-2">Key Highlights:</p>
+                    <p className="text-sm text-white/80">• Modular payload frameworks</p>
                   </div>
                 </div>
-                <div>
-                  <p className="text-sm font-bold text-psyc-orange mb-2">Key Highlights:</p>
-                  <p className="text-sm text-white/80">• Modular payload frameworks</p>
-                </div>
-              </div>
+              </Link>
 
-              {/* AI Vision Technology */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
-                {/* Enhanced Glow effect - matching main website */}
-                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
-                
-                {/* Shimmer effect - matching main website */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
-                
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
-                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Lightbulb icon */}
-                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" strokeWidth="2"/>
-                  </svg>
-                </div>
-                <div className="mb-4">
-                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Beta Testing</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">AI Vision Technology</h3>
-                <p className="text-white/80 mb-6">
-                  Cutting-edge computer vision and machine learning algorithms for autonomous operations
-                </p>
-                <div className="mb-4">
-                  <p className="text-sm text-white/60 mb-2">Development Progress</p>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm text-white/80">78%</span>
+              {/* AI Vision Technology - Clickable to Main Website */}
+              <Link to="/psyc-defence#features" className="block">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                  
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                  
+                  <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    
+                    <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Eye/Vision icon for AI Vision Technology */}
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" strokeWidth="2"/>
+                      <circle cx="12" cy="12" r="3" strokeWidth="2"/>
+                      <path d="M12 9v6" strokeWidth="2"/>
+                      <path d="M9 12h6" strokeWidth="2"/>
+                    </svg>
                   </div>
-                  <div className="w-full bg-white/20 rounded-full h-2">
-                    <div className="bg-psyc-orange h-2 rounded-full" style={{ width: '78%' }}></div>
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">AI Vision Technology</h3>
+                  <p className="text-white/80 mb-6">
+                    Advanced computer vision and AI algorithms for real-time object detection, tracking, and intelligent decision-making in complex environments.
+                  </p>
+                  <ul className="space-y-2 text-white/80">
+                    <li>• Real-time detection</li>
+                    <li>• Object tracking</li>
+                    <li>• Pattern recognition</li>
+                    <li>• Autonomous decisions</li>
+                  </ul>
+                  <div className="mb-4">
+                    <p className="text-sm text-white/60 mb-2">Development Progress</p>
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm text-white/80">78%</span>
+                    </div>
+                    <div className="w-full bg-white/20 rounded-full h-2">
+                      <div className="bg-psyc-orange h-2 rounded-full" style={{ width: '78%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-psyc-orange mb-2">Key Highlights:</p>
+                    <p className="text-sm text-white/80">• Real-time object recognition</p>
                   </div>
                 </div>
-                <div>
-                  <p className="text-sm font-bold text-psyc-orange mb-2">Key Highlights:</p>
-                  <p className="text-sm text-white/80">• Real-time object recognition</p>
-                </div>
-              </div>
+              </Link>
 
               {/* Automation Operating Systems */}
               <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
@@ -1419,19 +1383,23 @@ const PortfolioHome = () => {
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden">
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
                   {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <svg className="w-8 h-8 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Gear icon */}
-                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" strokeWidth="2"/>
-                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" strokeWidth="2"/>
+                  
+                  <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Brain/Neural Network icon for Automation Operating Systems */}
+                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.12 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" strokeWidth="2"/>
+                    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.12 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" strokeWidth="2"/>
                   </svg>
                 </div>
                 <div className="mb-4">
                   <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Production Ready</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-psyc-orange">Automation Operating Systems</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">Automation Operating Systems</h3>
                 <p className="text-white/80 mb-6">
                   Intelligent OS frameworks for autonomous decision-making and system optimization
                 </p>
@@ -1506,42 +1474,96 @@ const PortfolioHome = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Precision Targeting */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Target icon - concentric circles with center dot */}
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  
+                  <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Advanced Targeting/Scope icon for Precision Targeting */}
                     <circle cx="12" cy="12" r="10" strokeWidth="2"/>
                     <circle cx="12" cy="12" r="6" strokeWidth="2"/>
                     <circle cx="12" cy="12" r="2" strokeWidth="2"/>
+                    <path d="M12 2v20" strokeWidth="2"/>
+                    <path d="M2 12h20" strokeWidth="2"/>
+                    <path d="M7 7l10 10" strokeWidth="2"/>
+                    <path d="M17 7l-10 10" strokeWidth="2"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Precision Targeting</h3>
-                <p className="text-white/80">Advanced algorithms for high-precision target acquisition and tracking</p>
+                <h3 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-500 text-center">Precision Targeting</h3>
+                <p className="text-white/80 text-center">Advanced algorithms for high-precision target acquisition and tracking</p>
               </div>
 
               {/* Performance Analytics */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Line graph trending upwards icon */}
-                    <path d="M3 18L9 12L13 16L21 8" strokeWidth="2"/>
-                    <path d="M21 8v6h-6" strokeWidth="2"/>
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  
+                  <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Comprehensive Analytics Dashboard icon for Performance Analytics */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" strokeWidth="2"/>
+                    <path d="M9 9h6v6H9z" strokeWidth="2"/>
+                    <path d="M9 3v6" strokeWidth="2"/>
+                    <path d="M15 3v6" strokeWidth="2"/>
+                    <path d="M3 9h6" strokeWidth="2"/>
+                    <path d="M15 9h6" strokeWidth="2"/>
+                    <path d="M9 15h6" strokeWidth="2"/>
+                    <path d="M3 15h6" strokeWidth="2"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Performance Analytics</h3>
-                <p className="text-white/80">Real-time performance monitoring and optimization systems</p>
+                <h3 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-500 text-center">Performance Analytics</h3>
+                <p className="text-white/80 text-center">Real-time performance monitoring and optimization systems</p>
               </div>
 
               {/* Energy Management */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-psyc-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {/* Lightning bolt icon */}
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth="2"/>
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                {/* Enhanced Glow effect - matching main website */}
+                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Shimmer effect - matching main website */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
+                
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
+                
+                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
+                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  
+                  <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {/* Battery/Power Management icon for Energy Management */}
+                    <rect x="2" y="7" width="16" height="10" rx="2" ry="2" strokeWidth="2"/>
+                    <path d="M20 10v4" strokeWidth="2"/>
+                    <path d="M6 10v4" strokeWidth="2"/>
+                    <path d="M8 10v4" strokeWidth="2"/>
+                    <path d="M10 10v4" strokeWidth="2"/>
+                    <path d="M12 10v4" strokeWidth="2"/>
+                    <path d="M14 10v4" strokeWidth="2"/>
+                    <path d="M16 10v4" strokeWidth="2"/>
+                    <path d="M18 10v4" strokeWidth="2"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-psyc-orange">Energy Management</h3>
-                <p className="text-white/80">Intelligent power distribution and consumption optimization</p>
+                <h3 className="text-xl font-bold mb-2 text-white group-hover:text-psyc-orange transition-colors duration-500 text-center">Energy Management</h3>
+                <p className="text-white/80 text-center">Intelligent power distribution and consumption optimization</p>
               </div>
             </div>
           </div>
