@@ -585,9 +585,9 @@ const PortfolioHome = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {/* AI-First Payload Systems */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -616,7 +616,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Computer Vision Technology */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -645,7 +645,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Automation Frameworks */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -674,7 +674,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Defence-Grade Security */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -703,7 +703,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Sensor Integration */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -732,7 +732,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Edge Computing */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -762,7 +762,7 @@ const PortfolioHome = () => {
 
               {/* Darting Tariort - Clickable to Main Website */}
               <Link to="/psyc-defence#hero" className="block">
-                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                   {/* Enhanced Glow effect - matching main website */}
                   <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                   
@@ -772,9 +772,9 @@ const PortfolioHome = () => {
                   {/* Grid Pattern Background - Inside each capability box */}
                   <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
                   
-                  <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 relative overflow-hidden">
+                  <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
                     {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
                     
                     {/* Darting Turret Icon */}
                     <Crosshair className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
@@ -797,40 +797,45 @@ const PortfolioHome = () => {
 
 
 
-              {/* AI Vision Technology */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
-                {/* Enhanced Glow effect - matching main website */}
-                <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
-                
-                {/* Shimmer effect - matching main website */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
-                
-                {/* Grid Pattern Background - Inside each capability box */}
-                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
-                
-                <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
-                  {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+              {/* AI Vision Technology - Clickable to Main Website */}
+              <Link to="/psyc-defence#features" className="block">
+                <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+                  {/* Enhanced Glow effect - matching main website */}
+                  <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                   
-                  {/* Icon background - black by default */}
-                  <div className="absolute inset-2 bg-black rounded"></div>
+                  {/* Shimmer effect - matching main website */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                   
-                  <Crosshair className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" />
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4xNSkiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-80" />
+                  
+                  <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
+                    {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    
+                    <svg className="w-10 h-10 text-psyc-orange group-hover:text-white relative z-10 transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      {/* Eye/Vision icon for AI Vision Technology */}
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" strokeWidth="2"/>
+                      <circle cx="12" cy="12" r="3" strokeWidth="2"/>
+                      <path d="M12 9v6" strokeWidth="2"/>
+                      <path d="M9 12h6" strokeWidth="2"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">AI Vision Technology</h3>
+                  <p className="text-white/80 mb-6">
+                    Advanced computer vision and AI algorithms for real-time object detection, tracking, and intelligent decision-making in complex environments.
+                  </p>
+                  <ul className="space-y-2 text-white/80">
+                    <li>• Real-time detection</li>
+                    <li>• Object tracking</li>
+                    <li>• Pattern recognition</li>
+                    <li>• Autonomous decisions</li>
+                  </ul>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-psyc-orange transition-colors duration-500">AI Vision Technology</h3>
-                <p className="text-white/80 mb-6">
-                  Advanced computer vision and AI algorithms for real-time object detection, tracking, and intelligent decision-making in complex environments.
-                </p>
-                <ul className="space-y-2 text-white/80">
-                  <li>• Real-time detection</li>
-                  <li>• Object tracking</li>
-                  <li>• Pattern recognition</li>
-                  <li>• Autonomous decisions</li>
-                </ul>
-              </div>
+              </Link>
 
               {/* Advanced Payload System */}
-              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -1327,7 +1332,7 @@ const PortfolioHome = () => {
 
               {/* AI Vision Technology - Clickable to Main Website */}
               <Link to="/psyc-defence#features" className="block">
-                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden">
+                <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                   {/* Enhanced Glow effect - matching main website */}
                   <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                   
@@ -1335,7 +1340,7 @@ const PortfolioHome = () => {
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
                   
                   {/* Grid Pattern Background - Inside each capability box */}
-                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4wMykiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsIDExMSwgMCwgMC4xNSkiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9zdmc+')] opacity-60" />
                   
                   <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 ease-out relative overflow-hidden mx-auto">
                     {/* Icon shimmer effect - left to right glow - EXACTLY like main website */}
@@ -1359,19 +1364,6 @@ const PortfolioHome = () => {
                     <li>• Pattern recognition</li>
                     <li>• Autonomous decisions</li>
                   </ul>
-                  <div className="mb-4">
-                    <p className="text-sm text-white/60 mb-2">Development Progress</p>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-white/80">78%</span>
-                    </div>
-                    <div className="w-full bg-white/20 rounded-full h-2">
-                      <div className="bg-psyc-orange h-2 rounded-full" style={{ width: '78%' }}></div>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-psyc-orange mb-2">Key Highlights:</p>
-                    <p className="text-sm text-white/80">• Real-time object recognition</p>
-                  </div>
                 </div>
               </Link>
 
