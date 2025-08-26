@@ -587,7 +587,7 @@ const PortfolioHome = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {/* AI-First Payload Systems */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -616,7 +616,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Computer Vision Technology */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -645,7 +645,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Automation Frameworks */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -674,7 +674,7 @@ const PortfolioHome = () => {
               </div>
 
               {/* Defence-Grade Security */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -703,9 +703,12 @@ const PortfolioHome = () => {
               </div>
 
               {/* Sensor Integration */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
                 
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
@@ -732,9 +735,12 @@ const PortfolioHome = () => {
               </div>
 
               {/* Edge Computing */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                
+                {/* Grid Pattern Background - Inside each capability box */}
+                <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
                 
                 {/* Shimmer effect - matching main website */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
@@ -762,9 +768,12 @@ const PortfolioHome = () => {
 
               {/* Darting Tariort - Clickable to Main Website */}
               <Link to="/psyc-defence#hero" className="block">
-                <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                   {/* Enhanced Glow effect - matching main website */}
                   <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
+                  
+                  {/* Grid Pattern Background - Inside each capability box */}
+                  <div className="absolute inset-0 rounded-xl bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMCBoNDAgdjQwIEgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgxMDAsIDEwMCwgMTAwLCAwLjE1KSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-60" />
                   
                   {/* Shimmer effect - matching main website */}
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/15 to-transparent bg-[length:200%_100%] -translate-x-full group-hover:animate-shimmer opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300"></div>
@@ -799,7 +808,7 @@ const PortfolioHome = () => {
 
               {/* AI Vision Technology - Clickable to Main Website */}
               <Link to="/psyc-defence#features" className="block">
-                <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                   {/* Enhanced Glow effect - matching main website */}
                   <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                   
@@ -835,7 +844,7 @@ const PortfolioHome = () => {
               </Link>
 
               {/* Advanced Payload System */}
-              <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+              <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                 {/* Enhanced Glow effect - matching main website */}
                 <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                 
@@ -1332,7 +1341,7 @@ const PortfolioHome = () => {
 
               {/* AI Vision Technology - Clickable to Main Website */}
               <Link to="/psyc-defence#features" className="block">
-                <div className="bg-black/80 backdrop-blur-sm border-2 border-orange-500/50 p-8 rounded-xl shadow-2xl shadow-orange-500/20 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
+                <div className="bg-psyc-darkest border border-orange-500/30 p-8 rounded-lg shadow-lg hover:border-2 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-500 ease-out hover:scale-105 cursor-pointer group relative overflow-hidden min-h-[400px]">
                   {/* Enhanced Glow effect - matching main website */}
                   <div className="absolute -inset-[1px] rounded-xl bg-gradient-to-r from-orange-500/0 via-orange-500/30 to-orange-500/0 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500 z-[-1]"></div>
                   
